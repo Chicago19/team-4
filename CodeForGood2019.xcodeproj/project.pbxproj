@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4522DF1023359C95007C27CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522DF0F23359C95007C27CE /* AppDelegate.swift */; };
+		4522DF1223359C95007C27CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522DF1123359C95007C27CE /* ViewController.swift */; };
+		4522DF1523359C95007C27CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4522DF1323359C95007C27CE /* Main.storyboard */; };
+		4522DF1723359C97007C27CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4522DF1623359C97007C27CE /* Assets.xcassets */; };
+		4522DF1A23359C97007C27CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4522DF1823359C97007C27CE /* LaunchScreen.storyboard */; };
+		76989B537977DF4F5BC864CE /* Pods_CodeForGood2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFC632E782DF8879B6EBA43 /* Pods_CodeForGood2019.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		034BC05735A45D2F60757EF1 /* Pods-CodeForGood2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeForGood2019.release.xcconfig"; path = "Target Support Files/Pods-CodeForGood2019/Pods-CodeForGood2019.release.xcconfig"; sourceTree = "<group>"; };
+		10757E07F267EE2C97B9F0F8 /* Pods-CodeForGood2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeForGood2019.debug.xcconfig"; path = "Target Support Files/Pods-CodeForGood2019/Pods-CodeForGood2019.debug.xcconfig"; sourceTree = "<group>"; };
+		4522DF0C23359C95007C27CE /* CodeForGood2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeForGood2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4522DF0F23359C95007C27CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4522DF1123359C95007C27CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4522DF1423359C95007C27CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4522DF1623359C97007C27CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4522DF1923359C97007C27CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4522DF1B23359C97007C27CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCFC632E782DF8879B6EBA43 /* Pods_CodeForGood2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeForGood2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4522DF0923359C95007C27CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76989B537977DF4F5BC864CE /* Pods_CodeForGood2019.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0620F57F6E113778AAAEDED1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10757E07F267EE2C97B9F0F8 /* Pods-CodeForGood2019.debug.xcconfig */,
+				034BC05735A45D2F60757EF1 /* Pods-CodeForGood2019.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4522DF0323359C95007C27CE = {
+			isa = PBXGroup;
+			children = (
+				4522DF0E23359C95007C27CE /* CodeForGood2019 */,
+				4522DF0D23359C95007C27CE /* Products */,
+				0620F57F6E113778AAAEDED1 /* Pods */,
+				B17C523D4422D181729A34AC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4522DF0D23359C95007C27CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4522DF0C23359C95007C27CE /* CodeForGood2019.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4522DF0E23359C95007C27CE /* CodeForGood2019 */ = {
+			isa = PBXGroup;
+			children = (
+				4522DF0F23359C95007C27CE /* AppDelegate.swift */,
+				4522DF1123359C95007C27CE /* ViewController.swift */,
+				4522DF1323359C95007C27CE /* Main.storyboard */,
+				4522DF1623359C97007C27CE /* Assets.xcassets */,
+				4522DF1823359C97007C27CE /* LaunchScreen.storyboard */,
+				4522DF1B23359C97007C27CE /* Info.plist */,
+			);
+			path = CodeForGood2019;
+			sourceTree = "<group>";
+		};
+		B17C523D4422D181729A34AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCFC632E782DF8879B6EBA43 /* Pods_CodeForGood2019.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4522DF0B23359C95007C27CE /* CodeForGood2019 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4522DF1E23359C97007C27CE /* Build configuration list for PBXNativeTarget "CodeForGood2019" */;
+			buildPhases = (
+				9BBCC629726DF10D37FA31DF /* [CP] Check Pods Manifest.lock */,
+				4522DF0823359C95007C27CE /* Sources */,
+				4522DF0923359C95007C27CE /* Frameworks */,
+				4522DF0A23359C95007C27CE /* Resources */,
+				04668F147D9926BA62137488 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodeForGood2019;
+			productName = CodeForGood2019;
+			productReference = 4522DF0C23359C95007C27CE /* CodeForGood2019.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4522DF0423359C95007C27CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Malik Arachiche";
+				TargetAttributes = {
+					4522DF0B23359C95007C27CE = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 4522DF0723359C95007C27CE /* Build configuration list for PBXProject "CodeForGood2019" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4522DF0323359C95007C27CE;
+			productRefGroup = 4522DF0D23359C95007C27CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4522DF0B23359C95007C27CE /* CodeForGood2019 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4522DF0A23359C95007C27CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4522DF1A23359C97007C27CE /* LaunchScreen.storyboard in Resources */,
+				4522DF1723359C97007C27CE /* Assets.xcassets in Resources */,
+				4522DF1523359C95007C27CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04668F147D9926BA62137488 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CodeForGood2019/Pods-CodeForGood2019-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CodeForGood2019/Pods-CodeForGood2019-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CodeForGood2019/Pods-CodeForGood2019-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BBCC629726DF10D37FA31DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CodeForGood2019-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4522DF0823359C95007C27CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4522DF1223359C95007C27CE /* ViewController.swift in Sources */,
+				4522DF1023359C95007C27CE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4522DF1323359C95007C27CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4522DF1423359C95007C27CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4522DF1823359C97007C27CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4522DF1923359C97007C27CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4522DF1C23359C97007C27CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4522DF1D23359C97007C27CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4522DF1F23359C97007C27CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10757E07F267EE2C97B9F0F8 /* Pods-CodeForGood2019.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SZ2SY9L2LM;
+				INFOPLIST_FILE = CodeForGood2019/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MalikArachiche.CodeForGood2019;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4522DF2023359C97007C27CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 034BC05735A45D2F60757EF1 /* Pods-CodeForGood2019.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SZ2SY9L2LM;
+				INFOPLIST_FILE = CodeForGood2019/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MalikArachiche.CodeForGood2019;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4522DF0723359C95007C27CE /* Build configuration list for PBXProject "CodeForGood2019" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4522DF1C23359C97007C27CE /* Debug */,
+				4522DF1D23359C97007C27CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4522DF1E23359C97007C27CE /* Build configuration list for PBXNativeTarget "CodeForGood2019" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4522DF1F23359C97007C27CE /* Debug */,
+				4522DF2023359C97007C27CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4522DF0423359C95007C27CE /* Project object */;
+}
