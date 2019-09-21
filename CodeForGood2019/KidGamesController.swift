@@ -6,4 +6,13 @@
 //  Copyright © 2019 Malik Arachiche. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class KidGamesViewController: UIViewController {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}

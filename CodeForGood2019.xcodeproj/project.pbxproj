@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		06F99B0C2335B9730095C66C /* KidGames.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F99B0B2335B9730095C66C /* KidGames.storyboard */; };
-		06F99B0E2335B9BD0095C66C /* KidGamesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F99B0D2335B9BD0095C66C /* KidGamesController.swift */; };
+		06F99B162335D0700095C66C /* KidGamesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F99B152335D0700095C66C /* KidGamesController.swift */; };
 		4522DF1023359C95007C27CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522DF0F23359C95007C27CE /* AppDelegate.swift */; };
 		4522DF1223359C95007C27CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522DF1123359C95007C27CE /* ViewController.swift */; };
 		4522DF1523359C95007C27CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4522DF1323359C95007C27CE /* Main.storyboard */; };
@@ -22,7 +22,7 @@
 /* Begin PBXFileReference section */
 		034BC05735A45D2F60757EF1 /* Pods-CodeForGood2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeForGood2019.release.xcconfig"; path = "Target Support Files/Pods-CodeForGood2019/Pods-CodeForGood2019.release.xcconfig"; sourceTree = "<group>"; };
 		06F99B0B2335B9730095C66C /* KidGames.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KidGames.storyboard; sourceTree = "<group>"; };
-		06F99B0D2335B9BD0095C66C /* KidGamesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KidGamesController.swift; sourceTree = "<group>"; };
+		06F99B152335D0700095C66C /* KidGamesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KidGamesController.swift; sourceTree = "<group>"; };
 		10757E07F267EE2C97B9F0F8 /* Pods-CodeForGood2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeForGood2019.debug.xcconfig"; path = "Target Support Files/Pods-CodeForGood2019/Pods-CodeForGood2019.debug.xcconfig"; sourceTree = "<group>"; };
 		4522DF0C23359C95007C27CE /* CodeForGood2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeForGood2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4522DF0F23359C95007C27CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,13 +81,13 @@
 				4522DF0F23359C95007C27CE /* AppDelegate.swift */,
 				4522DF1123359C95007C27CE /* ViewController.swift */,
 				45516A212335AD1900D223FF /* ResourcesViewController.swift */,
+				06F99B152335D0700095C66C /* KidGamesController.swift */,
 				4522DF1323359C95007C27CE /* Main.storyboard */,
 				45516A1F2335A70000D223FF /* TabBar.storyboard */,
 				4522DF1623359C97007C27CE /* Assets.xcassets */,
 				4522DF1823359C97007C27CE /* LaunchScreen.storyboard */,
 				4522DF1B23359C97007C27CE /* Info.plist */,
 				06F99B0B2335B9730095C66C /* KidGames.storyboard */,
-				06F99B0D2335B9BD0095C66C /* KidGamesController.swift */,
 			);
 			path = CodeForGood2019;
 			sourceTree = "<group>";
@@ -217,7 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06F99B0E2335B9BD0095C66C /* KidGamesController.swift in Sources */,
+				06F99B162335D0700095C66C /* KidGamesController.swift in Sources */,
 				4522DF1223359C95007C27CE /* ViewController.swift in Sources */,
 				4522DF1023359C95007C27CE /* AppDelegate.swift in Sources */,
 				45516A222335AD1900D223FF /* ResourcesViewController.swift in Sources */,
