@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iYF-NP-YJz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3rb-5W-sqq">
     <device id="ipad11_0rounded" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,56 +18,70 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="110" translatesAutoresizingMaskIntoConstraints="NO" id="7dp-Pl-v7m">
-                                <rect key="frame" x="50" y="392" width="734" height="410"/>
+                                <rect key="frame" x="117" y="592" width="600" height="410"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sN-XO-kFx">
-                                        <rect key="frame" x="0.0" y="0.0" width="734" height="150"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
                                         <color key="backgroundColor" red="0.51146090030000002" green="0.3259220719" blue="0.6274797916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="WSz-Pg-X5J"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="52"/>
-                                        <state key="normal" title="Parent">
-                                            <color key="titleColor" red="0.66129225489999999" green="0.75741714240000002" blue="0.52545142170000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="60"/>
+                                        <state key="normal" title="Parents">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="parentAction:" destination="iYF-NP-YJz" eventType="touchUpInside" id="gwf-mK-GBg"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfK-ip-8IV">
-                                        <rect key="frame" x="0.0" y="260" width="734" height="150"/>
+                                        <rect key="frame" x="0.0" y="260" width="600" height="150"/>
                                         <color key="backgroundColor" red="0.51146090030000002" green="0.3259220719" blue="0.6274797916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="9IQ-dy-5eP"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="60"/>
                                         <state key="normal" title="Kids">
-                                            <color key="titleColor" red="0.66129225489999999" green="0.75741714240000002" blue="0.52545142170000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="kidAction:" destination="iYF-NP-YJz" eventType="touchUpInside" id="fi8-aS-Mhp"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="410" id="RQu-ZW-xPU"/>
+                                    <constraint firstAttribute="width" constant="600" id="toy-fQ-6Cs"/>
+                                </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ccaclogo" translatesAutoresizingMaskIntoConstraints="NO" id="8NN-u8-I0Z">
+                                <rect key="frame" x="192" y="134" width="450" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="Uk8-7g-LKf"/>
+                                    <constraint firstAttribute="width" constant="450" id="yxY-iU-2ko"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="W5h-vX-Ojj" firstAttribute="trailing" secondItem="7dp-Pl-v7m" secondAttribute="trailing" constant="50" id="3uS-qQ-ud6"/>
-                            <constraint firstItem="7dp-Pl-v7m" firstAttribute="centerY" secondItem="cHO-lm-HvT" secondAttribute="centerY" id="56y-g4-pJU"/>
-                            <constraint firstItem="7dp-Pl-v7m" firstAttribute="leading" secondItem="W5h-vX-Ojj" secondAttribute="leading" constant="50" id="sNz-ab-DzM"/>
+                            <constraint firstItem="7dp-Pl-v7m" firstAttribute="centerY" secondItem="cHO-lm-HvT" secondAttribute="centerY" constant="200" id="56y-g4-pJU"/>
+                            <constraint firstItem="8NN-u8-I0Z" firstAttribute="top" secondItem="W5h-vX-Ojj" secondAttribute="top" constant="60" id="Mgt-tP-VNN"/>
+                            <constraint firstItem="8NN-u8-I0Z" firstAttribute="centerX" secondItem="cHO-lm-HvT" secondAttribute="centerX" id="nJt-rn-okb"/>
                             <constraint firstItem="7dp-Pl-v7m" firstAttribute="centerX" secondItem="cHO-lm-HvT" secondAttribute="centerX" id="uxd-sG-Vo8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="W5h-vX-Ojj"/>
                     </view>
+                    <navigationItem key="navigationItem" id="vLa-rX-MGS"/>
                     <connections>
+                        <outlet property="kidsButton" destination="cfK-ip-8IV" id="h72-qq-IMK"/>
+                        <outlet property="parentButton" destination="5sN-XO-kFx" id="kbY-Mi-whn"/>
                         <segue destination="JNM-Xi-onM" kind="show" identifier="parentIdentitySegue" id="x9z-d1-0T3"/>
                         <segue destination="5nD-LD-Vtk" kind="show" identifier="kidIdentitySegue" id="mLk-bE-Tub"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFT-0t-vwW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="134" y="-496"/>
+            <point key="canvasLocation" x="887.76978417266196" y="-496.4824120603015"/>
         </scene>
         <!--Parent Verification View Controller-->
         <scene sceneID="3xq-WZ-HKx">
@@ -77,29 +91,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOj-TT-h0x">
-                                <rect key="frame" x="100" y="424" width="634" height="150"/>
-                                <color key="backgroundColor" red="0.51146090030000002" green="0.3259220719" blue="0.6274797916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="P9I-8b-pBY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
-                                <state key="normal" title="Submit">
-                                    <color key="titleColor" red="0.66129225489999999" green="0.75741714240000002" blue="0.52545142170000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="parentButtonTapped:" destination="JNM-Xi-onM" eventType="touchUpInside" id="ZKj-D3-sMA"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type in your code...." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="brP-Cg-wIt">
-                                <rect key="frame" x="100" y="174" width="634" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="kFB-gb-PuL"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnS-y4-Fy1">
                                 <rect key="frame" x="26" y="39" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -110,15 +101,48 @@
                                     <action selector="backButtonTapped:" destination="JNM-Xi-onM" eventType="touchUpInside" id="ONq-Me-vUe"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ccaclogo" translatesAutoresizingMaskIntoConstraints="NO" id="lAi-I9-iaA">
+                                <rect key="frame" x="192" y="134" width="450" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="450" id="0ft-H4-PQq"/>
+                                    <constraint firstAttribute="height" constant="400" id="V3W-K2-OG9"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="6V1-B7-7cX">
+                                <rect key="frame" x="200.5" y="672" width="433" height="250"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Type in your code..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="brP-Cg-wIt">
+                                        <rect key="frame" x="0.0" y="0.0" width="433" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="kFB-gb-PuL"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.54117647058823526" green="0.3145552278" blue="0.64665478470000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOj-TT-h0x">
+                                        <rect key="frame" x="0.0" y="150" width="433" height="100"/>
+                                        <color key="backgroundColor" red="0.51146090030000002" green="0.3259220719" blue="0.6274797916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="P9I-8b-pBY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="49"/>
+                                        <state key="normal" title="Submit">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="parentButtonTapped:" destination="JNM-Xi-onM" eventType="touchUpInside" id="ZKj-D3-sMA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="brP-Cg-wIt" firstAttribute="leading" secondItem="aps-bZ-CQF" secondAttribute="leading" constant="100" id="38F-au-sgZ"/>
-                            <constraint firstItem="aps-bZ-CQF" firstAttribute="trailing" secondItem="brP-Cg-wIt" secondAttribute="trailing" constant="100" id="FUq-TR-JHc"/>
-                            <constraint firstItem="brP-Cg-wIt" firstAttribute="top" secondItem="aps-bZ-CQF" secondAttribute="top" constant="150" id="So6-OU-afX"/>
-                            <constraint firstItem="DOj-TT-h0x" firstAttribute="top" secondItem="brP-Cg-wIt" secondAttribute="bottom" constant="100" id="Xa9-X5-Xjb"/>
-                            <constraint firstItem="aps-bZ-CQF" firstAttribute="trailing" secondItem="DOj-TT-h0x" secondAttribute="trailing" constant="100" id="Yv0-if-jIA"/>
-                            <constraint firstItem="DOj-TT-h0x" firstAttribute="leading" secondItem="aps-bZ-CQF" secondAttribute="leading" constant="100" id="i6P-U1-yXh"/>
+                            <constraint firstItem="lAi-I9-iaA" firstAttribute="top" secondItem="aps-bZ-CQF" secondAttribute="top" constant="60" id="EsF-of-OSO"/>
+                            <constraint firstItem="6V1-B7-7cX" firstAttribute="centerY" secondItem="ArQ-4s-S5m" secondAttribute="centerY" constant="200" id="GGb-4H-x0I"/>
+                            <constraint firstItem="lAi-I9-iaA" firstAttribute="centerX" secondItem="ArQ-4s-S5m" secondAttribute="centerX" id="bBZ-67-Phz"/>
+                            <constraint firstItem="6V1-B7-7cX" firstAttribute="centerX" secondItem="ArQ-4s-S5m" secondAttribute="centerX" id="cAB-p7-god"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aps-bZ-CQF"/>
                     </view>
@@ -131,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iaV-cb-FFD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1049.6402877697842" y="-496.4824120603015"/>
+            <point key="canvasLocation" x="1803.5971223021584" y="-496.4824120603015"/>
         </scene>
         <!--TabBar-->
         <scene sceneID="KBr-AB-Vpc">
@@ -139,7 +163,7 @@
                 <viewControllerPlaceholder storyboardName="TabBar" id="8ZD-yM-cKX" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sao-lg-2NK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1667" y="-513"/>
+            <point key="canvasLocation" x="2420.5035971223024" y="-513.0653266331658"/>
         </scene>
         <!--Ages-->
         <scene sceneID="QxO-9W-5Pn">
@@ -149,5 +173,26 @@
             </objects>
             <point key="canvasLocation" x="408" y="-100"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="t9X-2r-xdM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3rb-5W-sqq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aPR-be-KbD">
+                        <rect key="frame" x="0.0" y="24" width="834" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iYF-NP-YJz" kind="relationship" relationship="rootViewController" id="fLl-bB-cov"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g5W-O2-xns" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.81294964028777" y="-496.4824120603015"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="ccaclogo" width="308" height="307"/>
+    </resources>
 </document>

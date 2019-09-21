@@ -18,6 +18,7 @@ class ParentVerificationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        parentCodeTextField.layer.borderColor = Colors.fadedPurple.cgColor
         // Do any additional setup after loading the view.
     }
     
