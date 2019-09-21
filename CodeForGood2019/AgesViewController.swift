@@ -15,6 +15,7 @@ class AgesViewController: UIViewController {
     @IBOutlet weak var toddlerButton: UIButton!
     @IBOutlet weak var preteenButton: UIButton!
     @IBOutlet weak var teenButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
