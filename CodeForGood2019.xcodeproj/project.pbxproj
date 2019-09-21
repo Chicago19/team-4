@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06D740222335E703001338E2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4522DF1B23359C97007C27CE /* Info.plist */; };
 		06F99B0C2335B9730095C66C /* KidGames.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F99B0B2335B9730095C66C /* KidGames.storyboard */; };
 		06F99B162335D0700095C66C /* KidGamesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F99B152335D0700095C66C /* KidGamesController.swift */; };
 		4522DF1023359C95007C27CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522DF0F23359C95007C27CE /* AppDelegate.swift */; };
@@ -178,6 +179,7 @@
 				D5DB75862335BC8F00FE0CBF /* LandingStoryboard.storyboard in Resources */,
 				4522DF1723359C97007C27CE /* Assets.xcassets in Resources */,
 				4522DF1523359C95007C27CE /* Main.storyboard in Resources */,
+				06D740222335E703001338E2 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
