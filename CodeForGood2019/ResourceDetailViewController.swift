@@ -19,6 +19,10 @@ class ResourceDetailViewController: UIViewController {
         super.viewDidLoad()
         
         detailTextLabel.text = res.detailText;
+        detailTextLabel.numberOfLines = 25
+        detailTextLabel.font = UIFont(name: "AppleSDGothicNeo-Medium", size: 28)
+        detailTextLabel.textAlignment = .left
+        
         //setUpUI()
     }
     
