@@ -19,6 +19,10 @@ class KidsMiddleScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "background1")
+        backgroundImage.contentMode = UIViewContentMode.scaleAspectfill
+        self.view.insertSubview(backgroundImage, at: 0)
         setUpUI()
     }
     
