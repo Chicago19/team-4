@@ -25,34 +25,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page1" translatesAutoresizingMaskIntoConstraints="NO" id="8E4-cd-bTl">
-                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejW-KE-nhG">
-                                <rect key="frame" x="729" y="497" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejW-KE-nhG">
+                                <rect key="frame" x="708" y="520" width="58" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="yWv-1U-JBe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.54117647059999996" green="0.3145552278" blue="0.64665478470000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="Xxb-1u-jIy" kind="show" id="c3U-ER-Yik"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKH-X9-nJ7">
-                                <rect key="frame" x="5" y="20" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Exit"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKH-X9-nJ7">
+                                <rect key="frame" x="5" y="20" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8st-NJ-bAq"/>
+                                    <constraint firstAttribute="width" constant="80" id="PXU-m9-n1p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Exit">
+                                    <color key="titleColor" red="0.54117647059999996" green="0.3145552278" blue="0.64665478470000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="4ca-XY-EnQ" kind="show" id="qYr-bg-Whg"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page1" translatesAutoresizingMaskIntoConstraints="NO" id="8E4-cd-bTl">
+                                <rect key="frame" x="20" y="80" width="683" height="897"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ejW-KE-nhG" secondAttribute="trailing" constant="2" id="421-ez-9a2"/>
+                            <constraint firstItem="IKH-X9-nJ7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="I42-6E-860"/>
+                            <constraint firstItem="8E4-cd-bTl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Kpt-23-W7n"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="8E4-cd-bTl" secondAttribute="bottom" constant="47" id="abn-GH-ssN"/>
+                            <constraint firstItem="ejW-KE-nhG" firstAttribute="leading" secondItem="8E4-cd-bTl" secondAttribute="trailing" constant="5" id="bEh-dM-Rct"/>
+                            <constraint firstItem="8E4-cd-bTl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="60" id="egO-Qu-Vso"/>
+                            <constraint firstItem="ejW-KE-nhG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="500" id="lLU-6D-acA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8E4-cd-bTl" secondAttribute="trailing" constant="45" id="t6Q-hM-TqL"/>
+                            <constraint firstItem="IKH-X9-nJ7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uTe-05-hVM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="88.28125" y="17.578125"/>
+            <point key="canvasLocation" x="-1084.375" y="34.5703125"/>
         </scene>
         <!--page2-->
         <scene sceneID="w3w-7n-dJr">
@@ -69,19 +90,14 @@
                                 <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6x2-ce-9K9">
-                                <rect key="frame" x="727" y="496" width="32" height="30"/>
+                                <rect key="frame" x="712" y="494" width="45" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.54117647059999996" green="0.3145552278" blue="0.64665478470000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="gWW-4I-gz0" kind="show" id="CBx-VB-IrX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xo9-Ae-6ke">
-                                <rect key="frame" x="10" y="497" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Prev"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="QoR-Td-wR8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -105,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T6O-fu-Fx4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="751.5625" y="17.578125"/>
+            <point key="canvasLocation" x="221" y="-307"/>
         </scene>
         <!--page3-->
         <scene sceneID="4lY-Gq-XAd">
@@ -124,19 +140,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79D-fl-860">
-                                <rect key="frame" x="727" y="497" width="32" height="30"/>
+                                <rect key="frame" x="715" y="496" width="45" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.54117647059999996" green="0.3145552278" blue="0.64665478470000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="gfW-qs-7w8" kind="show" id="zgw-9H-a19"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bN9-rc-MB7">
-                                <rect key="frame" x="9" y="497" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Prev"/>
-                                <connections>
-                                    <segue destination="Xxb-1u-jIy" kind="show" id="dx0-hN-8eM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -150,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EDd-6I-m3R" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1412.5" y="17.578125"/>
+            <point key="canvasLocation" x="1084" y="-335"/>
         </scene>
         <!--page4-->
         <scene sceneID="CJm-yF-ONz">
@@ -165,19 +176,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6A-X7-Kjl">
-                                <rect key="frame" x="727" y="496" width="32" height="30"/>
+                                <rect key="frame" x="713" y="494" width="45" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.54117647059999996" green="0.3145552278" blue="0.64665478470000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="hUN-m9-6zD" kind="show" id="ysd-Be-Qkt"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONt-Kc-LTS">
-                                <rect key="frame" x="10" y="497" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Prev"/>
-                                <connections>
-                                    <segue destination="gWW-4I-gz0" kind="show" id="tEr-2b-6up"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -187,7 +193,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bo-ae-mHc" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2075" y="17.578125"/>
+            <point key="canvasLocation" x="2142" y="-294"/>
         </scene>
         <!--page5-->
         <scene sceneID="Not-V6-DyZ">
@@ -209,14 +215,6 @@
                                     <segue destination="Ucy-Fv-plV" kind="show" id="edH-14-GMv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZE-N7-IcX">
-                                <rect key="frame" x="10" y="497" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Prev"/>
-                                <connections>
-                                    <segue destination="gfW-qs-7w8" kind="show" id="Cvd-Z8-Qj7"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="KTo-8D-vfh"/>
@@ -224,7 +222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXS-5D-iWq" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2697.65625" y="17.578125"/>
+            <point key="canvasLocation" x="2689" y="670"/>
         </scene>
         <!--page6-->
         <scene sceneID="Us6-O1-VlB">
@@ -239,19 +237,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihP-mV-zyP">
-                                <rect key="frame" x="727" y="496" width="32" height="30"/>
+                                <rect key="frame" x="714" y="496" width="45" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.54117647059999996" green="0.3145552278" blue="0.64665478470000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="c4e-oT-OsA" kind="show" id="TFp-gK-eRy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ang-m4-e9f">
-                                <rect key="frame" x="10" y="497" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Prev"/>
-                                <connections>
-                                    <segue destination="hUN-m9-6zD" kind="show" id="VT0-xf-iQb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -577,9 +570,5 @@
         <segue reference="AaR-05-UTH"/>
         <segue reference="TFp-gK-eRy"/>
         <segue reference="edH-14-GMv"/>
-        <segue reference="ysd-Be-Qkt"/>
-        <segue reference="zgw-9H-a19"/>
-        <segue reference="CBx-VB-IrX"/>
-        <segue reference="c3U-ER-Yik"/>
     </inferredMetricsTieBreakers>
 </document>
