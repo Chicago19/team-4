@@ -21,7 +21,7 @@ class LandingViewController: UIViewController {
     }
     
     @IBAction func kidAction(_ sender: Any) {
-        
+        self.performSegue(withIdentifier: "kidIdentitySegue", sender: self)
     }
     /*
     // MARK: - Navigation
