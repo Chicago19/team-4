@@ -9,6 +9,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Ages-->
+        <scene sceneID="H0u-7c-pew">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Ages" id="4ca-XY-EnQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3U-q5-nT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-177" y="-422"/>
+        </scene>
         <!--page1-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -18,7 +26,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page1" translatesAutoresizingMaskIntoConstraints="NO" id="8E4-cd-bTl">
-                                <rect key="frame" x="48" y="65" width="672" height="797"/>
+                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejW-KE-nhG">
@@ -29,10 +37,13 @@
                                     <segue destination="Xxb-1u-jIy" kind="show" id="c3U-ER-Yik"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37q-0O-H2a">
-                                <rect key="frame" x="7" y="20" width="48" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKH-X9-nJ7">
+                                <rect key="frame" x="5" y="20" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="&lt; Back"/>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <segue destination="4ca-XY-EnQ" kind="show" id="qYr-bg-Whg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -46,14 +57,16 @@
         <!--page2-->
         <scene sceneID="w3w-7n-dJr">
             <objects>
-                <viewController title="page2" id="Xxb-1u-jIy" customClass="ViewController" customModule="CodeForGood2019" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="page2" id="Xxb-1u-jIy" customClass="Page1ViewController" customModule="CodeForGood2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="anp-KK-AeH">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page2" translatesAutoresizingMaskIntoConstraints="NO" id="1vI-rC-0CD">
-                                <rect key="frame" x="48" y="65" width="672" height="797"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page2" translatesAutoresizingMaskIntoConstraints="NO" id="Iwg-Wb-C2M" userLabel="MainImageView">
+                                <rect key="frame" x="0.0" y="20" width="768.00000000000045" height="1004"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dzN-Co-go9" userLabel="TempImageView">
+                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6x2-ce-9K9">
                                 <rect key="frame" x="727" y="496" width="32" height="30"/>
@@ -73,33 +86,43 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Iwg-Wb-C2M" firstAttribute="bottom" secondItem="2dM-0Z-rns" secondAttribute="bottom" id="A6e-x3-Zgn"/>
+                            <constraint firstItem="2dM-0Z-rns" firstAttribute="trailing" secondItem="Iwg-Wb-C2M" secondAttribute="trailing" id="Eix-V5-Noe"/>
+                            <constraint firstItem="dzN-Co-go9" firstAttribute="trailing" secondItem="2dM-0Z-rns" secondAttribute="trailing" id="JzU-gQ-aXx"/>
+                            <constraint firstItem="dzN-Co-go9" firstAttribute="leading" secondItem="2dM-0Z-rns" secondAttribute="leading" id="WmJ-yz-wgv"/>
+                            <constraint firstItem="dzN-Co-go9" firstAttribute="top" secondItem="2dM-0Z-rns" secondAttribute="top" id="Y3b-da-Jid"/>
+                            <constraint firstItem="Iwg-Wb-C2M" firstAttribute="leading" secondItem="2dM-0Z-rns" secondAttribute="leading" id="kXL-fj-EmN"/>
+                            <constraint firstItem="Iwg-Wb-C2M" firstAttribute="top" secondItem="2dM-0Z-rns" secondAttribute="top" id="lOX-Ey-JNn"/>
+                            <constraint firstItem="dzN-Co-go9" firstAttribute="bottom" secondItem="2dM-0Z-rns" secondAttribute="bottom" id="tL5-Ld-OHC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2dM-0Z-rns"/>
                     </view>
+                    <connections>
+                        <outlet property="page2" destination="Iwg-Wb-C2M" id="eNg-VH-cBU"/>
+                        <outlet property="temp2" destination="dzN-Co-go9" id="SFh-0w-mH4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T6O-fu-Fx4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="752" y="18"/>
+            <point key="canvasLocation" x="751.5625" y="17.578125"/>
         </scene>
         <!--page3-->
         <scene sceneID="4lY-Gq-XAd">
             <objects>
-                <viewController title="page3" id="gWW-4I-gz0" customClass="ViewController" customModule="CodeForGood2019" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="page3" id="gWW-4I-gz0" customClass="Page2ViewController" customModule="CodeForGood2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tb8-s6-eI2">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page3" translatesAutoresizingMaskIntoConstraints="NO" id="Tdg-DH-kdo">
-                                <rect key="frame" x="48" y="65" width="672" height="797"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page3" translatesAutoresizingMaskIntoConstraints="NO" id="2eE-8s-ppP" userLabel="MainImageView">
+                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bN9-rc-MB7">
-                                <rect key="frame" x="9" y="497" width="31" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p6A-Af-1t8" userLabel="TempImageView">
+                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Prev"/>
-                                <connections>
-                                    <segue destination="Xxb-1u-jIy" kind="show" id="dx0-hN-8eM"/>
-                                </connections>
-                            </button>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79D-fl-860">
                                 <rect key="frame" x="727" y="497" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -108,14 +131,26 @@
                                     <segue destination="gfW-qs-7w8" kind="show" id="zgw-9H-a19"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bN9-rc-MB7">
+                                <rect key="frame" x="9" y="497" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Prev"/>
+                                <connections>
+                                    <segue destination="Xxb-1u-jIy" kind="show" id="dx0-hN-8eM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="UhS-sN-mpc"/>
                     </view>
+                    <connections>
+                        <outlet property="page2" destination="2eE-8s-ppP" id="Ab0-i2-iXj"/>
+                        <outlet property="temp2" destination="p6A-Af-1t8" id="m9p-dq-8K1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EDd-6I-m3R" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1413" y="18"/>
+            <point key="canvasLocation" x="1412.5" y="17.578125"/>
         </scene>
         <!--page4-->
         <scene sceneID="CJm-yF-ONz">
@@ -126,7 +161,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page4" translatesAutoresizingMaskIntoConstraints="NO" id="P13-wb-Fo5">
-                                <rect key="frame" x="48" y="65" width="672" height="797"/>
+                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6A-X7-Kjl">
@@ -152,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bo-ae-mHc" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2075" y="18"/>
+            <point key="canvasLocation" x="2075" y="17.578125"/>
         </scene>
         <!--page5-->
         <scene sceneID="Not-V6-DyZ">
@@ -163,7 +198,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page5" translatesAutoresizingMaskIntoConstraints="NO" id="6Su-7R-e3K">
-                                <rect key="frame" x="48" y="65" width="672" height="797"/>
+                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfK-Ec-h0V">
@@ -189,7 +224,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXS-5D-iWq" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2698" y="18"/>
+            <point key="canvasLocation" x="2697.65625" y="17.578125"/>
         </scene>
         <!--page6-->
         <scene sceneID="Us6-O1-VlB">
@@ -543,8 +578,8 @@
         <segue reference="TFp-gK-eRy"/>
         <segue reference="edH-14-GMv"/>
         <segue reference="ysd-Be-Qkt"/>
-        <segue reference="Cvd-Z8-Qj7"/>
-        <segue reference="tEr-2b-6up"/>
+        <segue reference="zgw-9H-a19"/>
+        <segue reference="CBx-VB-IrX"/>
         <segue reference="c3U-ER-Yik"/>
     </inferredMetricsTieBreakers>
 </document>
