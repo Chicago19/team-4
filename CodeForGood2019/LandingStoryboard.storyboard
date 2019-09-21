@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iYF-NP-YJz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iYF-NP-YJz">
     <device id="ipad11_0rounded" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,24 +17,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sN-XO-kFx">
-                                <rect key="frame" x="165" y="178" width="45" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Parent"/>
-                                <connections>
-                                    <action selector="parentAction:" destination="iYF-NP-YJz" eventType="touchUpInside" id="gwf-mK-GBg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfK-ip-8IV">
-                                <rect key="frame" x="172" y="318" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Kids"/>
-                                <connections>
-                                    <action selector="kidAction:" destination="iYF-NP-YJz" eventType="touchUpInside" id="fi8-aS-Mhp"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="110" translatesAutoresizingMaskIntoConstraints="NO" id="7dp-Pl-v7m">
+                                <rect key="frame" x="50" y="392" width="734" height="410"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sN-XO-kFx">
+                                        <rect key="frame" x="0.0" y="0.0" width="734" height="150"/>
+                                        <color key="backgroundColor" red="0.51146090030000002" green="0.3259220719" blue="0.6274797916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="WSz-Pg-X5J"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                        <state key="normal" title="Parent">
+                                            <color key="titleColor" red="0.66129225489999999" green="0.75741714240000002" blue="0.52545142170000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="parentAction:" destination="iYF-NP-YJz" eventType="touchUpInside" id="gwf-mK-GBg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfK-ip-8IV">
+                                        <rect key="frame" x="0.0" y="260" width="734" height="150"/>
+                                        <color key="backgroundColor" red="0.51146090030000002" green="0.3259220719" blue="0.6274797916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="9IQ-dy-5eP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                        <state key="normal" title="Kids">
+                                            <color key="titleColor" red="0.66129225489999999" green="0.75741714240000002" blue="0.52545142170000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="kidAction:" destination="iYF-NP-YJz" eventType="touchUpInside" id="fi8-aS-Mhp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="W5h-vX-Ojj" firstAttribute="trailing" secondItem="7dp-Pl-v7m" secondAttribute="trailing" constant="50" id="3uS-qQ-ud6"/>
+                            <constraint firstItem="7dp-Pl-v7m" firstAttribute="centerY" secondItem="cHO-lm-HvT" secondAttribute="centerY" id="56y-g4-pJU"/>
+                            <constraint firstItem="7dp-Pl-v7m" firstAttribute="leading" secondItem="W5h-vX-Ojj" secondAttribute="leading" constant="50" id="sNz-ab-DzM"/>
+                            <constraint firstItem="7dp-Pl-v7m" firstAttribute="centerX" secondItem="cHO-lm-HvT" secondAttribute="centerX" id="uxd-sG-Vo8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="W5h-vX-Ojj"/>
                     </view>
                     <connections>
@@ -53,26 +76,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOj-TT-h0x">
-                                <rect key="frame" x="145" y="149" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOj-TT-h0x">
+                                <rect key="frame" x="100" y="424" width="634" height="150"/>
+                                <color key="backgroundColor" red="0.51146090030000002" green="0.3259220719" blue="0.6274797916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="P9I-8b-pBY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.66129225489999999" green="0.75741714240000002" blue="0.52545142170000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="parentButtonTapped:" destination="JNM-Xi-onM" eventType="touchUpInside" id="ZKj-D3-sMA"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type in your code...." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="brP-Cg-wIt">
+                                <rect key="frame" x="100" y="174" width="634" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="kFB-gb-PuL"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="brP-Cg-wIt" firstAttribute="leading" secondItem="aps-bZ-CQF" secondAttribute="leading" constant="100" id="38F-au-sgZ"/>
+                            <constraint firstItem="aps-bZ-CQF" firstAttribute="trailing" secondItem="brP-Cg-wIt" secondAttribute="trailing" constant="100" id="FUq-TR-JHc"/>
+                            <constraint firstItem="brP-Cg-wIt" firstAttribute="top" secondItem="aps-bZ-CQF" secondAttribute="top" constant="150" id="So6-OU-afX"/>
+                            <constraint firstItem="DOj-TT-h0x" firstAttribute="top" secondItem="brP-Cg-wIt" secondAttribute="bottom" constant="100" id="Xa9-X5-Xjb"/>
+                            <constraint firstItem="aps-bZ-CQF" firstAttribute="trailing" secondItem="DOj-TT-h0x" secondAttribute="trailing" constant="100" id="Yv0-if-jIA"/>
+                            <constraint firstItem="DOj-TT-h0x" firstAttribute="leading" secondItem="aps-bZ-CQF" secondAttribute="leading" constant="100" id="i6P-U1-yXh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aps-bZ-CQF"/>
                     </view>
                     <connections>
                         <outlet property="parentButton" destination="DOj-TT-h0x" id="4Qn-AB-bSf"/>
+                        <outlet property="parentCodeTextField" destination="brP-Cg-wIt" id="gJ7-NT-FfR"/>
                         <segue destination="8ZD-yM-cKX" kind="show" identifier="parentToTabBar" id="maU-PJ-Mie"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iaV-cb-FFD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1050" y="-496"/>
+            <point key="canvasLocation" x="1049.6402877697842" y="-496.4824120603015"/>
         </scene>
         <!--TabBar-->
         <scene sceneID="KBr-AB-Vpc">
