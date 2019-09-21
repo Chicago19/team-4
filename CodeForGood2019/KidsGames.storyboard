@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dxY-mh-Z8R">
     <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gjg-w7-gNR">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                <rect key="frame" x="0.0" y="-6" width="768" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="9VN-sH-oT8"/>
                                 </constraints>
@@ -27,11 +26,12 @@
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Kids Games" id="niH-Do-Ve8"/>
+                                    <navigationItem title="Kid's Games" id="tVM-zl-80u"/>
                                 </items>
                             </navigationBar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bubbleIconTransparency" translatesAutoresizingMaskIntoConstraints="NO" id="bLt-qI-8y8">
                                 <rect key="frame" x="280" y="110" width="209" height="128"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="209" id="inu-57-uAx"/>
                                 </constraints>
@@ -48,38 +48,89 @@
                                 <rect key="frame" x="280" y="273" width="209" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sonicIconTransparent" translatesAutoresizingMaskIntoConstraints="NO" id="Uj1-0h-l6X">
-                                <rect key="frame" x="528" y="273" width="209" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="subwayIconTransparent" translatesAutoresizingMaskIntoConstraints="NO" id="3Zz-L5-u64">
                                 <rect key="frame" x="155" y="431" width="209" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flowIconTransparent" translatesAutoresizingMaskIntoConstraints="NO" id="RUp-9b-SVf">
-                                <rect key="frame" x="29" y="110" width="209" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ticTacToeIconTransparent" translatesAutoresizingMaskIntoConstraints="NO" id="onj-OL-kZm">
                                 <rect key="frame" x="406" y="431" width="209" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPT-8L-vj3">
+                                <rect key="frame" x="67" y="110" width="134" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="flowIconTransparent"/>
+                                <connections>
+                                    <action selector="flowButtonPressed:" destination="dxY-mh-Z8R" eventType="touchUpInside" id="hyL-nf-Hyi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryh-Ng-Jfe">
+                                <rect key="frame" x="568" y="273" width="139" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="sonicIconTransparent"/>
+                                <connections>
+                                    <action selector="sonicButtonPressed:" destination="dxY-mh-Z8R" eventType="touchUpInside" id="71a-ej-AmO"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flow2" translatesAutoresizingMaskIntoConstraints="NO" id="1DI-4W-3o4">
+                                <rect key="frame" x="-33" y="44" width="836" height="980"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sonic1" translatesAutoresizingMaskIntoConstraints="NO" id="NW2-1c-gkG">
+                                <rect key="frame" x="14" y="44" width="734" height="980"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.66621524095535278" green="0.77159720659255981" blue="0.60389786958694458" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ZYp-36-gXS"/>
                     </view>
+                    <connections>
+                        <outlet property="flowButton" destination="CPT-8L-vj3" id="7m0-W2-DjS"/>
+                        <outlet property="flowImage" destination="1DI-4W-3o4" id="kUp-Tq-T8k"/>
+                        <outlet property="sonicButton" destination="ryh-Ng-Jfe" id="3oG-uj-GQB"/>
+                        <outlet property="sonicImage" destination="NW2-1c-gkG" id="GWe-i2-JMK"/>
+                        <segue destination="QcT-g4-tRQ" kind="show" identifier="kidsGameSegue" id="dAe-H0-y0g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lFs-h5-bGE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="rW1-Xg-vSR"/>
             </objects>
             <point key="canvasLocation" x="-4010.15625" y="-767.578125"/>
+        </scene>
+        <!--Kids Game Detail View Controller-->
+        <scene sceneID="9sN-xC-uML">
+            <objects>
+                <viewController id="QcT-g4-tRQ" customClass="KidsGameDetailViewController" customModule="CodeForGood2019" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pq5-ir-ALr">
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="984"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2hr-G5-GhK">
+                                <rect key="frame" x="0.0" y="0.0" width="712" height="984"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="nMz-n3-5aK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="06F-ge-Tu5"/>
+                    <connections>
+                        <outlet property="kidsImageView" destination="2hr-G5-GhK" id="X63-IJ-MPn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ort-vc-Btn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3207" y="-768"/>
         </scene>
     </scenes>
     <resources>
         <image name="bikeIconTransparent" width="253" height="248"/>
         <image name="bubbleIconTransparency" width="252" height="249"/>
+        <image name="flow2" width="313" height="417"/>
         <image name="flowIconTransparent" width="249" height="242"/>
         <image name="helixIconTransparent" width="250" height="246"/>
         <image name="nailSalonIconTransparent" width="250" height="246"/>
+        <image name="sonic1" width="311" height="417"/>
         <image name="sonicIconTransparent" width="253" height="246"/>
         <image name="subwayIconTransparent" width="246" height="243"/>
         <image name="ticTacToeIconTransparent" width="250" height="246"/>
