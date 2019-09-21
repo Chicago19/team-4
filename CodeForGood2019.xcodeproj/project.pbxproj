@@ -15,6 +15,9 @@
 		45516A202335A70000D223FF /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45516A1F2335A70000D223FF /* TabBar.storyboard */; };
 		45516A222335AD1900D223FF /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45516A212335AD1900D223FF /* ResourcesViewController.swift */; };
 		45516A282335CB2600D223FF /* ResourcesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45516A272335CB2600D223FF /* ResourcesTableViewCell.swift */; };
+		45CA14F82335E08800E8D58F /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA14F72335E08800E8D58F /* SurveyViewController.swift */; };
+		45CA14FA2335E98700E8D58F /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA14F92335E98700E8D58F /* Resources.swift */; };
+		45CA14FC2335EC7300E8D58F /* ResourceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA14FB2335EC7300E8D58F /* ResourceDetailViewController.swift */; };
 		76989B537977DF4F5BC864CE /* Pods_CodeForGood2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFC632E782DF8879B6EBA43 /* Pods_CodeForGood2019.framework */; };
 		D5DB75862335BC8F00FE0CBF /* LandingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5DB75852335BC8F00FE0CBF /* LandingStoryboard.storyboard */; };
 		D5DB75882335BCEA00FE0CBF /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB75872335BCEA00FE0CBF /* LandingViewController.swift */; };
@@ -34,6 +37,9 @@
 		45516A1F2335A70000D223FF /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		45516A212335AD1900D223FF /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
 		45516A272335CB2600D223FF /* ResourcesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesTableViewCell.swift; sourceTree = "<group>"; };
+		45CA14F72335E08800E8D58F /* SurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
+		45CA14F92335E98700E8D58F /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		45CA14FB2335EC7300E8D58F /* ResourceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceDetailViewController.swift; sourceTree = "<group>"; };
 		D5DB75852335BC8F00FE0CBF /* LandingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LandingStoryboard.storyboard; sourceTree = "<group>"; };
 		D5DB75872335BCEA00FE0CBF /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		D5DB75892335BD9600FE0CBF /* ParentVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentVerificationViewController.swift; sourceTree = "<group>"; };
@@ -85,9 +91,12 @@
 				4522DF0F23359C95007C27CE /* AppDelegate.swift */,
 				4522DF1123359C95007C27CE /* ViewController.swift */,
 				45516A212335AD1900D223FF /* ResourcesViewController.swift */,
+				45CA14FB2335EC7300E8D58F /* ResourceDetailViewController.swift */,
 				45516A272335CB2600D223FF /* ResourcesTableViewCell.swift */,
+				45CA14F92335E98700E8D58F /* Resources.swift */,
 				4522DF1323359C95007C27CE /* Main.storyboard */,
 				45516A1F2335A70000D223FF /* TabBar.storyboard */,
+				45CA14F72335E08800E8D58F /* SurveyViewController.swift */,
 				4522DF1623359C97007C27CE /* Assets.xcassets */,
 				4522DF1823359C97007C27CE /* LaunchScreen.storyboard */,
 				4522DF1B23359C97007C27CE /* Info.plist */,
@@ -224,9 +233,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5DB758A2335BD9600FE0CBF /* ParentVerificationViewController.swift in Sources */,
+				45CA14F82335E08800E8D58F /* SurveyViewController.swift in Sources */,
 				4522DF1223359C95007C27CE /* ViewController.swift in Sources */,
 				4522DF1023359C95007C27CE /* AppDelegate.swift in Sources */,
 				D5DB75882335BCEA00FE0CBF /* LandingViewController.swift in Sources */,
+				45CA14FC2335EC7300E8D58F /* ResourceDetailViewController.swift in Sources */,
+				45CA14FA2335E98700E8D58F /* Resources.swift in Sources */,
 				45516A222335AD1900D223FF /* ResourcesViewController.swift in Sources */,
 				45516A282335CB2600D223FF /* ResourcesTableViewCell.swift in Sources */,
 			);

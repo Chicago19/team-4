@@ -2,16 +2,17 @@
 //  SurveyViewController.swift
 //  CodeForGood2019
 //
-//  Created by Nikhil Iyer on 9/21/19.
+//  Created by Malik Arachiche on 9/20/19.
 //  Copyright © 2019 Malik Arachiche. All rights reserved.
 //
 
 import UIKit
 import WebKit
+import SnapKit
 
 class SurveyViewController: UIViewController, WKUIDelegate {
 
-    @IBOutlet weak var webView: WKWebView!
+    @IBOutlet var webView: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,12 @@ class SurveyViewController: UIViewController, WKUIDelegate {
         view = webView
     }
     
-
+    @IBAction func resetAction(_ sender: Any) {
+        let myURL = URL(string:"https://www.google.com")
+        let myRequest = URLRequest(url: myURL!)
+        webView.load(myRequest)
+    }
+    
     /*
     // MARK: - Navigation
 
