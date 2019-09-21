@@ -20,6 +20,19 @@ class Page2ViewController: UIViewController {
     var swiped = false
     var im = UIImage(named: "page2")
     
+
+    @IBAction func red(_ sender: Any) {
+        color = UIColor.red
+    }
+    
+    @IBAction func black(_ sender: Any) {
+        color = UIColor.black
+    }
+    
+    @IBAction func blue(_ sender: Any) {
+        color = UIColor.blue
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else {
             return
