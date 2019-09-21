@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kTb-2n-7bq">
+    <device id="ipad10_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Landing View Controller-->
+        <scene sceneID="HfL-qf-tLJ">
+            <objects>
+                <viewController id="kTb-2n-7bq" customClass="LandingViewController" customModule="CodeForGood2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uuU-dY-Zag">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="79" translatesAutoresizingMaskIntoConstraints="NO" id="ySC-vW-aRu">
+                                <rect key="frame" x="217" y="366.5" width="400" height="379"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzr-We-0IY">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="150"/>
+                                        <color key="backgroundColor" red="0.51146090030000002" green="0.3259220719" blue="0.6274797916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="374-iF-j5G"/>
+                                            <constraint firstAttribute="width" constant="400" id="NUm-Fm-80v"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                        <state key="normal" title="Parents">
+                                            <color key="titleColor" red="0.66129225489999999" green="0.75741714240000002" blue="0.52545142170000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="parentsAction:" destination="kTb-2n-7bq" eventType="touchUpInside" id="T8p-LR-Hge"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xju-UI-ppA">
+                                        <rect key="frame" x="0.0" y="229" width="400" height="150"/>
+                                        <color key="backgroundColor" red="0.51146090030000002" green="0.3259220719" blue="0.6274797916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="6GN-su-rMr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                        <state key="normal" title="Kids">
+                                            <color key="titleColor" red="0.66129225489999999" green="0.75741714240000002" blue="0.52545142170000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="kidsAction:" destination="kTb-2n-7bq" eventType="touchUpInside" id="pNm-9n-TFy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ySC-vW-aRu" firstAttribute="centerY" secondItem="uuU-dY-Zag" secondAttribute="centerY" id="6MY-Dc-RP4"/>
+                            <constraint firstItem="ySC-vW-aRu" firstAttribute="centerX" secondItem="uuU-dY-Zag" secondAttribute="centerX" id="c4G-SR-HIy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eLu-Bk-aEj"/>
+                    </view>
+                    <connections>
+                        <segue destination="kCK-9K-dMY" kind="show" identifier="parentIdentificationSegue" id="B0c-oS-kNK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OIo-k4-0tf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-747.48201438848923" y="-160.25179856115108"/>
+        </scene>
+        <!--Parent Verify View Controller-->
+        <scene sceneID="0bO-m6-LG4">
+            <objects>
+                <viewController id="kCK-9K-dMY" customClass="ParentVerifyViewController" customModule="CodeForGood2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TFa-B6-meo">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your code...." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgD-NN-n33">
+                                <rect key="frame" x="100" y="305" width="634" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="7bX-5f-RTu"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lcx-de-Ihy">
+                                <rect key="frame" x="150" y="465" width="534" height="80"/>
+                                <color key="backgroundColor" red="0.51146090030000002" green="0.3259220719" blue="0.6274797916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="M21-K3-ybZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.66129225489999999" green="0.75741714240000002" blue="0.52545142170000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="verifyParent:" destination="kCK-9K-dMY" eventType="touchUpInside" id="ro7-fP-Zt9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Lcx-de-Ihy" firstAttribute="top" secondItem="wgD-NN-n33" secondAttribute="bottom" constant="80" id="KVR-Bp-VPD"/>
+                            <constraint firstItem="tq0-BV-hu8" firstAttribute="trailing" secondItem="wgD-NN-n33" secondAttribute="trailing" constant="100" id="NL1-G8-RhZ"/>
+                            <constraint firstItem="wgD-NN-n33" firstAttribute="leading" secondItem="tq0-BV-hu8" secondAttribute="leading" constant="100" id="TlC-cj-Utf"/>
+                            <constraint firstItem="wgD-NN-n33" firstAttribute="top" secondItem="tq0-BV-hu8" secondAttribute="top" constant="285" id="eCR-MZ-5mB"/>
+                            <constraint firstItem="Lcx-de-Ihy" firstAttribute="leading" secondItem="tq0-BV-hu8" secondAttribute="leading" constant="150" id="ggl-8d-HyR"/>
+                            <constraint firstItem="tq0-BV-hu8" firstAttribute="trailing" secondItem="Lcx-de-Ihy" secondAttribute="trailing" constant="150" id="zB1-jN-U1N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tq0-BV-hu8"/>
+                    </view>
+                    <connections>
+                        <outlet property="codeTextField" destination="wgD-NN-n33" id="dgG-9M-FSg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IzB-H2-czO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="-160"/>
+        </scene>
+    </scenes>
+</document>

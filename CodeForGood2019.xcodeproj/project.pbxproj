@@ -11,9 +11,11 @@
 		4522DF1223359C95007C27CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522DF1123359C95007C27CE /* ViewController.swift */; };
 		4522DF1523359C95007C27CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4522DF1323359C95007C27CE /* Main.storyboard */; };
 		4522DF1723359C97007C27CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4522DF1623359C97007C27CE /* Assets.xcassets */; };
-		4522DF1A23359C97007C27CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4522DF1823359C97007C27CE /* LaunchScreen.storyboard */; };
 		45516A202335A70000D223FF /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45516A1F2335A70000D223FF /* TabBar.storyboard */; };
 		76989B537977DF4F5BC864CE /* Pods_CodeForGood2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFC632E782DF8879B6EBA43 /* Pods_CodeForGood2019.framework */; };
+		D5E6AE512335B0F900D01FAF /* LandingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5E6AE502335B0F900D01FAF /* LandingStoryboard.storyboard */; };
+		D5E6AE532335B31F00D01FAF /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E6AE522335B31F00D01FAF /* LandingViewController.swift */; };
+		D5E6AE552335B4E100D01FAF /* ParentVerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E6AE542335B4E100D01FAF /* ParentVerifyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,9 +26,11 @@
 		4522DF1123359C95007C27CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4522DF1423359C95007C27CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4522DF1623359C97007C27CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4522DF1923359C97007C27CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4522DF1B23359C97007C27CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45516A1F2335A70000D223FF /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		D5E6AE502335B0F900D01FAF /* LandingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LandingStoryboard.storyboard; sourceTree = "<group>"; };
+		D5E6AE522335B31F00D01FAF /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		D5E6AE542335B4E100D01FAF /* ParentVerifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentVerifyViewController.swift; sourceTree = "<group>"; };
 		DCFC632E782DF8879B6EBA43 /* Pods_CodeForGood2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeForGood2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -77,8 +81,10 @@
 				4522DF1323359C95007C27CE /* Main.storyboard */,
 				45516A1F2335A70000D223FF /* TabBar.storyboard */,
 				4522DF1623359C97007C27CE /* Assets.xcassets */,
-				4522DF1823359C97007C27CE /* LaunchScreen.storyboard */,
 				4522DF1B23359C97007C27CE /* Info.plist */,
+				D5E6AE502335B0F900D01FAF /* LandingStoryboard.storyboard */,
+				D5E6AE522335B31F00D01FAF /* LandingViewController.swift */,
+				D5E6AE542335B4E100D01FAF /* ParentVerifyViewController.swift */,
 			);
 			path = CodeForGood2019;
 			sourceTree = "<group>";
@@ -152,7 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45516A202335A70000D223FF /* TabBar.storyboard in Resources */,
-				4522DF1A23359C97007C27CE /* LaunchScreen.storyboard in Resources */,
+				D5E6AE512335B0F900D01FAF /* LandingStoryboard.storyboard in Resources */,
 				4522DF1723359C97007C27CE /* Assets.xcassets in Resources */,
 				4522DF1523359C95007C27CE /* Main.storyboard in Resources */,
 			);
@@ -208,6 +214,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4522DF1223359C95007C27CE /* ViewController.swift in Sources */,
+				D5E6AE532335B31F00D01FAF /* LandingViewController.swift in Sources */,
+				D5E6AE552335B4E100D01FAF /* ParentVerifyViewController.swift in Sources */,
 				4522DF1023359C95007C27CE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,14 +229,6 @@
 				4522DF1423359C95007C27CE /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4522DF1823359C97007C27CE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4522DF1923359C97007C27CE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -356,15 +356,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SZ2SY9L2LM;
+				DEVELOPMENT_TEAM = J58Z9KE9X9;
 				INFOPLIST_FILE = CodeForGood2019/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.MalikArachiche.CodeForGood2019;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -375,15 +376,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SZ2SY9L2LM;
+				DEVELOPMENT_TEAM = J58Z9KE9X9;
 				INFOPLIST_FILE = CodeForGood2019/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.MalikArachiche.CodeForGood2019;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
