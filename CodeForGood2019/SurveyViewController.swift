@@ -16,7 +16,7 @@ class SurveyViewController: UIViewController, WKUIDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let myURL = URL(string:"https://www.apple.com")
+        let myURL = URL(string:"https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAALhcYZxUME8yRDFNV1JNSDFBSjczRDlMT0ozTkVQMS4u")
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
         // Do any additional setup after loading the view.

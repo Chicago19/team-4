@@ -34,11 +34,13 @@ class ResourcesViewController: UIViewController {
         print("Got em coach")
         navigationController?.navigationBar.barTintColor = Colors.fadedPurple
         navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.prefersLargeTitles = true
         view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(ResourcesTableViewCell.self, forCellReuseIdentifier: "resourcesCell")
         tableView.rowHeight = 150
+        title = "Resources"
         
         setConstraints()
     }
@@ -81,7 +83,10 @@ extension ResourcesViewController: UITableViewDataSource {
         cell.textLabel?.text = resourcesArray[indexPath.row].title
         cell.textLabel?.textColor = Colors.fadedPurple
         cell.textLabel?.numberOfLines = 2
-        cell.textLabel?.font = UIFont(name: "AppleSDGothicNeo-Medium", size: 24)
+        cell.textLabel?.font = UIFont(name: "AppleSDGothicNeo-Medium", size: 30)
+        cell.textLabel?.textAlignment = .center
+        cell.layer.borderWidth = 2.0
+        cell.layer.borderColor = Colors.fadedGreen.cgColor
         
         return cell
     }

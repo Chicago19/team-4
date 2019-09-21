@@ -10,14 +10,18 @@ import UIKit
 
 class DocumentViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var arr = ["Advocacy Parent Folder", "Coloring-Book"];
+    var arr = ["Advocacy Parent Folder", "Coloring-Book", "Cyber Bullying", "Free Chicago Events", "Information for Grandparents Spanish", "Medical Information Spanish", "Parent Handbook"];
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arr.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = documentTableView.dequeueReusableCell(withIdentifier: "hello", for: indexPath) as! DocumentTableViewCell
+        cell.layer.borderWidth = 2.0
+        cell.layer.borderColor = Colors.fadedGreen.cgColor
         cell.documentLabel.text = arr[indexPath.row]
+        cell.documentLabel.textColor = Colors.fadedPurple
+        cell.documentLabel?.font = UIFont(name: "AppleSDGothicNeo-Medium", size: 30)
         return cell
         
     }
@@ -46,6 +50,9 @@ class DocumentViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.barTintColor = Colors.fadedPurple
+        navigationController?.navigationBar.prefersLargeTitles = true
+        title = "Documents"
         documentTableView.delegate = self
         documentTableView.dataSource = self
         // Do any additional setup after loading the view.

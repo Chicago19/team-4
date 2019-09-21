@@ -81,14 +81,20 @@
                                             <rect key="frame" x="0.0" y="0.0" width="834" height="122.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdw-HH-NuU">
-                                                    <rect key="frame" x="72" y="32" width="620" height="58"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdw-HH-NuU">
+                                                    <rect key="frame" x="10" y="10" width="814" height="102.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <color key="textColor" red="0.73725490199999999" green="0.59607843140000005" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Wdw-HH-NuU" secondAttribute="trailing" constant="10" id="EYl-Bb-lju"/>
+                                                <constraint firstAttribute="bottom" secondItem="Wdw-HH-NuU" secondAttribute="bottom" constant="10" id="Mlk-WN-Sv3"/>
+                                                <constraint firstItem="Wdw-HH-NuU" firstAttribute="top" secondItem="Cwm-6s-Q3c" secondAttribute="top" constant="10" id="gEV-KU-j5V"/>
+                                                <constraint firstItem="Wdw-HH-NuU" firstAttribute="leading" secondItem="Cwm-6s-Q3c" secondAttribute="leading" constant="10" id="m9T-Zu-kgF"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="documentLabel" destination="Wdw-HH-NuU" id="Eb4-wV-KgR"/>
@@ -196,6 +202,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="viD-Vj-dH3">
                         <rect key="frame" x="0.0" y="24" width="834" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.51253172589999996" green="0.04732930841" blue="0.42165232850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -217,6 +224,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mSd-jx-fSt">
                         <rect key="frame" x="0.0" y="24" width="834" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.51253172589999996" green="0.04732930841" blue="0.42165232850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
