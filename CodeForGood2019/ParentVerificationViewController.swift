@@ -10,6 +10,7 @@ import UIKit
 
 class ParentVerificationViewController: UIViewController {
 
+    @IBOutlet weak var parentCodeTextField: UITextField!
     @IBOutlet var parentButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +19,9 @@ class ParentVerificationViewController: UIViewController {
     }
     
     @IBAction func parentButtonTapped(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "parentToTabBar", sender: self)
+        if(parentCodeTextField.text! == "500") {
+            self.performSegue(withIdentifier: "parentToTabBar", sender: self)
+        }
     }
     
     /*
