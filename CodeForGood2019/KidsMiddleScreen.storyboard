@@ -82,6 +82,7 @@
                                 </state>
                                 <connections>
                                     <action selector="coloringBookTapped:" destination="xsR-ue-NJ1" eventType="touchUpInside" id="T43-6s-a01"/>
+                                    <segue destination="Gga-yq-cAC" kind="show" id="dyi-rJ-b6M"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -101,6 +102,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6fl-PX-ZhI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="97" y="91"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="M1x-qO-UOe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="Gga-yq-cAC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oDu-Ys-1ma" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="536" y="-141"/>
         </scene>
         <!--KidsGames-->
         <scene sceneID="Lbb-lg-yYB">
