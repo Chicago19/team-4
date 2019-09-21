@@ -15,6 +15,9 @@
 		45516A202335A70000D223FF /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45516A1F2335A70000D223FF /* TabBar.storyboard */; };
 		45516A222335AD1900D223FF /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45516A212335AD1900D223FF /* ResourcesViewController.swift */; };
 		76989B537977DF4F5BC864CE /* Pods_CodeForGood2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFC632E782DF8879B6EBA43 /* Pods_CodeForGood2019.framework */; };
+		D5DB75862335BC8F00FE0CBF /* LandingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5DB75852335BC8F00FE0CBF /* LandingStoryboard.storyboard */; };
+		D5DB75882335BCEA00FE0CBF /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB75872335BCEA00FE0CBF /* LandingViewController.swift */; };
+		D5DB758A2335BD9600FE0CBF /* ParentVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DB75892335BD9600FE0CBF /* ParentVerificationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		4522DF1B23359C97007C27CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45516A1F2335A70000D223FF /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		45516A212335AD1900D223FF /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
+		D5DB75852335BC8F00FE0CBF /* LandingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LandingStoryboard.storyboard; sourceTree = "<group>"; };
+		D5DB75872335BCEA00FE0CBF /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		D5DB75892335BD9600FE0CBF /* ParentVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentVerificationViewController.swift; sourceTree = "<group>"; };
 		DCFC632E782DF8879B6EBA43 /* Pods_CodeForGood2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeForGood2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -82,6 +88,9 @@
 				4522DF1623359C97007C27CE /* Assets.xcassets */,
 				4522DF1823359C97007C27CE /* LaunchScreen.storyboard */,
 				4522DF1B23359C97007C27CE /* Info.plist */,
+				D5DB75852335BC8F00FE0CBF /* LandingStoryboard.storyboard */,
+				D5DB75892335BD9600FE0CBF /* ParentVerificationViewController.swift */,
+				D5DB75872335BCEA00FE0CBF /* LandingViewController.swift */,
 			);
 			path = CodeForGood2019;
 			sourceTree = "<group>";
@@ -156,6 +165,7 @@
 			files = (
 				45516A202335A70000D223FF /* TabBar.storyboard in Resources */,
 				4522DF1A23359C97007C27CE /* LaunchScreen.storyboard in Resources */,
+				D5DB75862335BC8F00FE0CBF /* LandingStoryboard.storyboard in Resources */,
 				4522DF1723359C97007C27CE /* Assets.xcassets in Resources */,
 				4522DF1523359C95007C27CE /* Main.storyboard in Resources */,
 			);
@@ -210,8 +220,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5DB758A2335BD9600FE0CBF /* ParentVerificationViewController.swift in Sources */,
 				4522DF1223359C95007C27CE /* ViewController.swift in Sources */,
 				4522DF1023359C95007C27CE /* AppDelegate.swift in Sources */,
+				D5DB75882335BCEA00FE0CBF /* LandingViewController.swift in Sources */,
 				45516A222335AD1900D223FF /* ResourcesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,8 +372,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SZ2SY9L2LM;
+				DEVELOPMENT_TEAM = J58Z9KE9X9;
 				INFOPLIST_FILE = CodeForGood2019/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,8 +392,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SZ2SY9L2LM;
+				DEVELOPMENT_TEAM = J58Z9KE9X9;
 				INFOPLIST_FILE = CodeForGood2019/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
