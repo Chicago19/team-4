@@ -17,76 +17,106 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Sn-wb-xY9">
-                                <rect key="frame" x="314" y="146" width="141" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Sn-wb-xY9">
+                                <rect key="frame" x="309" y="347" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="A7A-55-e9z"/>
+                                    <constraint firstAttribute="height" constant="50" id="mZZ-oe-uBe"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbB-0N-Gea">
-                                <rect key="frame" x="259" y="417" width="249" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="Games">
-                                    <color key="titleShadowColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="gamesTapped:" destination="xsR-ue-NJ1" eventType="touchUpInside" id="vrN-dg-loa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncd-Th-vMY">
-                                <rect key="frame" x="259" y="540" width="249" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="Music">
-                                    <color key="titleShadowColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="musicTapped:" destination="xsR-ue-NJ1" eventType="touchUpInside" id="ZG9-IO-sOG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fT-59-gf8">
-                                <rect key="frame" x="260" y="665" width="249" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="Youtube Kids">
-                                    <color key="titleShadowColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="mediaTapped:" destination="xsR-ue-NJ1" eventType="touchUpInside" id="hxa-k5-dbc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hc-Ro-zrJ">
-                                <rect key="frame" x="259" y="788" width="249" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="Anonymous Q/A">
-                                    <color key="titleShadowColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="qaTapped:" destination="xsR-ue-NJ1" eventType="touchUpInside" id="R9g-ik-I2b"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2S-0O-Gue">
-                                <rect key="frame" x="260" y="297" width="249" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="Coloring Book">
-                                    <color key="titleShadowColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="coloringBookTapped:" destination="xsR-ue-NJ1" eventType="touchUpInside" id="T43-6s-a01"/>
-                                    <segue destination="Gga-yq-cAC" kind="show" id="dyi-rJ-b6M"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="Fms-62-LC7">
+                                <rect key="frame" x="259" y="437" width="250" height="450"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2S-0O-Gue">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="53"/>
+                                        <color key="backgroundColor" red="0.54117647059999996" green="0.3145552278" blue="0.64665478470000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <state key="normal" title="Coloring Book">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="coloringBookTapped:" destination="xsR-ue-NJ1" eventType="touchUpInside" id="T43-6s-a01"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbB-0N-Gea">
+                                        <rect key="frame" x="0.0" y="99" width="250" height="53.5"/>
+                                        <color key="backgroundColor" red="0.54117647059999996" green="0.3145552278" blue="0.64665478470000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <state key="normal" title="Games">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="gamesTapped:" destination="xsR-ue-NJ1" eventType="touchUpInside" id="vrN-dg-loa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncd-Th-vMY">
+                                        <rect key="frame" x="0.0" y="198.5" width="250" height="53"/>
+                                        <color key="backgroundColor" red="0.54117647059999996" green="0.3145552278" blue="0.64665478470000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <state key="normal" title="Music">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="musicTapped:" destination="xsR-ue-NJ1" eventType="touchUpInside" id="ZG9-IO-sOG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fT-59-gf8">
+                                        <rect key="frame" x="0.0" y="297.5" width="250" height="53.5"/>
+                                        <color key="backgroundColor" red="0.54117647059999996" green="0.3145552278" blue="0.64665478470000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <state key="normal" title="Youtube Kids">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="mediaTapped:" destination="xsR-ue-NJ1" eventType="touchUpInside" id="hxa-k5-dbc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hc-Ro-zrJ">
+                                        <rect key="frame" x="0.0" y="397" width="250" height="53"/>
+                                        <color key="backgroundColor" red="0.54117647059999996" green="0.3145552278" blue="0.64665478470000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <state key="normal" title="Anonymous Q/A">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="qaTapped:" destination="xsR-ue-NJ1" eventType="touchUpInside" id="R9g-ik-I2b"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="0P7-t7-T9T"/>
+                                    <constraint firstAttribute="height" constant="450" id="HB9-kj-PPn"/>
+                                    <constraint firstItem="WbB-0N-Gea" firstAttribute="height" secondItem="G2S-0O-Gue" secondAttribute="height" id="HWm-zo-KTi"/>
+                                    <constraint firstItem="3hc-Ro-zrJ" firstAttribute="height" secondItem="G2S-0O-Gue" secondAttribute="height" id="KTG-HI-LtU"/>
+                                    <constraint firstItem="0fT-59-gf8" firstAttribute="height" secondItem="G2S-0O-Gue" secondAttribute="height" id="NaR-XU-7Q3"/>
+                                    <constraint firstItem="ncd-Th-vMY" firstAttribute="height" secondItem="G2S-0O-Gue" secondAttribute="height" id="TB0-6b-o0L"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ccaclogo" translatesAutoresizingMaskIntoConstraints="NO" id="NI9-yX-8uK">
+                                <rect key="frame" x="134" y="70" width="500" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="9f7-Fo-w6r"/>
+                                    <constraint firstAttribute="width" constant="500" id="gdj-j4-uDG"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0Sn-wb-xY9" firstAttribute="centerX" secondItem="C30-8P-YaH" secondAttribute="centerX" id="40x-gf-UbN"/>
+                            <constraint firstItem="NI9-yX-8uK" firstAttribute="centerX" secondItem="C30-8P-YaH" secondAttribute="centerX" id="Em8-qM-Umm"/>
+                            <constraint firstItem="Fms-62-LC7" firstAttribute="centerX" secondItem="C30-8P-YaH" secondAttribute="centerX" id="KIM-Cu-j2a"/>
+                            <constraint firstItem="NI9-yX-8uK" firstAttribute="top" secondItem="c4C-QU-8EZ" secondAttribute="top" constant="50" id="fDv-IS-ulp"/>
+                            <constraint firstItem="Fms-62-LC7" firstAttribute="centerY" secondItem="C30-8P-YaH" secondAttribute="centerY" constant="150" id="h1e-HE-Eyd"/>
+                            <constraint firstItem="0Sn-wb-xY9" firstAttribute="centerY" secondItem="C30-8P-YaH" secondAttribute="centerY" constant="-140" id="nvD-0l-Ngg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="c4C-QU-8EZ"/>
                     </view>
                     <connections>
@@ -97,11 +127,20 @@
                         <outlet property="music" destination="ncd-Th-vMY" id="p21-Gm-JsB"/>
                         <outlet property="qa" destination="3hc-Ro-zrJ" id="rWB-63-Y6i"/>
                         <segue destination="VVS-UH-EYt" kind="show" identifier="kidGamesSegue" id="X3F-p6-hH8"/>
+                        <segue destination="bOq-ur-c2o" kind="show" identifier="colorSegue" id="RUB-3i-W6z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6fl-PX-ZhI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="97" y="91"/>
+            <point key="canvasLocation" x="96.875" y="90.8203125"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="zWV-2c-Z7O">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="bOq-ur-c2o" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LpV-LX-azB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="672" y="-37"/>
         </scene>
         <!--Main-->
         <scene sceneID="M1x-qO-UOe">
@@ -120,4 +159,7 @@
             <point key="canvasLocation" x="661" y="91"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ccaclogo" width="308" height="307"/>
+    </resources>
 </document>

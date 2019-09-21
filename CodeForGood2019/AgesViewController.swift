@@ -23,21 +23,24 @@ class AgesViewController: UIViewController {
     
     func setUpUI() {
         print("hi")
+        navigationController?.navigationBar.tintColor = .white
     }
     @IBAction func infantButtonTapped(_ sender: UIButton) {
-//        self.performSegue(withIdentifier: "coloringBookSegue", sender: self)
-        print("infant")
+        self.performSegue(withIdentifier: "kidsMiddleSegue", sender: self)
+        //self.performSegue(withIdentifier: "coloringBookSegue", sender: self)
+        //print("infant")
     }
     @IBAction func toddlerButtonTapped(_ sender: UIButton) {
-        print("toddler")
+        self.performSegue(withIdentifier: "kidsMiddleSegue", sender: self)
+        //print("toddler")
     }
     @IBAction func preteenButtonTapped(_ sender: UIButton) {
-        print("preteen")
+        //print("preteen")
         self.performSegue(withIdentifier: "kidsMiddleSegue", sender: self)
     }
     @IBAction func teenButton(_ sender: UIButton) {
         self.performSegue(withIdentifier: "kidsMiddleSegue", sender: self)
-        print("teen")
+        //print("teen")
     }
     
 }

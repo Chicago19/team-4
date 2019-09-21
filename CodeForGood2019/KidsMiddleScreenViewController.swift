@@ -27,6 +27,8 @@ class KidsMiddleScreenViewController: UIViewController {
     }
     
     @IBAction func coloringBookTapped(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "colorSegue", sender: self)
+        
     }
     @IBAction func gamesTapped(_ sender: UIButton) {
         self.performSegue(withIdentifier: "kidGamesSegue", sender: self)
