@@ -46,7 +46,6 @@
                                         </state>
                                         <connections>
                                             <action selector="kidAction:" destination="iYF-NP-YJz" eventType="touchUpInside" id="fi8-aS-Mhp"/>
-                                            <segue destination="mgl-O3-mH4" kind="show" identifier="kidIdentitySegue" id="ZS8-gR-ctr"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -63,6 +62,7 @@
                     </view>
                     <connections>
                         <segue destination="JNM-Xi-onM" kind="show" identifier="parentIdentitySegue" id="x9z-d1-0T3"/>
+                        <segue destination="5nD-LD-Vtk" kind="show" identifier="kidIdentitySegue" id="mLk-bE-Tub"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFT-0t-vwW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -122,14 +122,6 @@
             </objects>
             <point key="canvasLocation" x="1049.6402877697842" y="-496.4824120603015"/>
         </scene>
-        <!--Main-->
-        <scene sceneID="h9z-fu-2p1">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="mgl-O3-mH4" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Yb0-U3-KK7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="700" y="-74"/>
-        </scene>
         <!--TabBar-->
         <scene sceneID="KBr-AB-Vpc">
             <objects>
@@ -137,6 +129,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sao-lg-2NK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1667" y="-513"/>
+        </scene>
+        <!--Ages-->
+        <scene sceneID="QxO-9W-5Pn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Ages" id="5nD-LD-Vtk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eCp-TE-VTK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="408" y="-100"/>
         </scene>
     </scenes>
 </document>

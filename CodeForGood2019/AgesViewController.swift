@@ -25,6 +25,7 @@ class AgesViewController: UIViewController {
         print("hi")
     }
     @IBAction func infantButtonTapped(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "coloringBookSegue", sender: self)
         print("infant")
     }
     @IBAction func toddlerButtonTapped(_ sender: UIButton) {
