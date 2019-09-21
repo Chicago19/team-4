@@ -51,6 +51,7 @@ class DocumentViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.barTintColor = Colors.fadedPurple
+        navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.prefersLargeTitles = true
         title = "Documents"
         documentTableView.delegate = self

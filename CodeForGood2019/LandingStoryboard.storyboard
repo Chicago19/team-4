@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3rb-5W-sqq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iYF-NP-YJz">
     <device id="ipad11_0rounded" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -55,7 +55,7 @@
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ccaclogo" translatesAutoresizingMaskIntoConstraints="NO" id="8NN-u8-I0Z">
-                                <rect key="frame" x="192" y="134" width="450" height="400"/>
+                                <rect key="frame" x="192" y="84" width="450" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="Uk8-7g-LKf"/>
                                     <constraint firstAttribute="width" constant="450" id="yxY-iU-2ko"/>
@@ -91,9 +91,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnS-y4-Fy1">
-                                <rect key="frame" x="26" y="39" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnS-y4-Fy1">
+                                <rect key="frame" x="30" y="39" width="100" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Fxq-NU-BVc"/>
+                                    <constraint firstAttribute="width" constant="100" id="HCb-lZ-eff"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="36"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="0.73725490199999999" green="0.59607843140000005" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -102,7 +106,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ccaclogo" translatesAutoresizingMaskIntoConstraints="NO" id="lAi-I9-iaA">
-                                <rect key="frame" x="192" y="134" width="450" height="400"/>
+                                <rect key="frame" x="192" y="84" width="450" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="450" id="0ft-H4-PQq"/>
                                     <constraint firstAttribute="height" constant="400" id="V3W-K2-OG9"/>
@@ -141,8 +145,10 @@
                         <constraints>
                             <constraint firstItem="lAi-I9-iaA" firstAttribute="top" secondItem="aps-bZ-CQF" secondAttribute="top" constant="60" id="EsF-of-OSO"/>
                             <constraint firstItem="6V1-B7-7cX" firstAttribute="centerY" secondItem="ArQ-4s-S5m" secondAttribute="centerY" constant="200" id="GGb-4H-x0I"/>
+                            <constraint firstItem="BnS-y4-Fy1" firstAttribute="top" secondItem="aps-bZ-CQF" secondAttribute="top" constant="15" id="MYd-T3-rRe"/>
                             <constraint firstItem="lAi-I9-iaA" firstAttribute="centerX" secondItem="ArQ-4s-S5m" secondAttribute="centerX" id="bBZ-67-Phz"/>
                             <constraint firstItem="6V1-B7-7cX" firstAttribute="centerX" secondItem="ArQ-4s-S5m" secondAttribute="centerX" id="cAB-p7-god"/>
+                            <constraint firstItem="BnS-y4-Fy1" firstAttribute="leading" secondItem="aps-bZ-CQF" secondAttribute="leading" constant="30" id="wPB-Pa-KYf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aps-bZ-CQF"/>
                     </view>
@@ -172,24 +178,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eCp-TE-VTK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="408" y="-100"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="t9X-2r-xdM">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3rb-5W-sqq" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aPR-be-KbD">
-                        <rect key="frame" x="0.0" y="24" width="834" height="50"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="iYF-NP-YJz" kind="relationship" relationship="rootViewController" id="fLl-bB-cov"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g5W-O2-xns" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="133.81294964028777" y="-496.4824120603015"/>
         </scene>
     </scenes>
     <resources>

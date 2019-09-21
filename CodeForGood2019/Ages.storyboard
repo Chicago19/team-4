@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bwC-6h-j26">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jJ0-Im-HIK">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -17,63 +17,93 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7H-Jn-gQm">
-                                <rect key="frame" x="327" y="351" width="115" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="0 – 3">
-                                    <color key="titleShadowColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="infantButtonTapped:" destination="bwC-6h-j26" eventType="touchUpInside" id="HET-a0-fbJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhp-us-4G1">
-                                <rect key="frame" x="327" y="474" width="115" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="4 – 6">
-                                    <color key="titleShadowColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="toddlerButtonTapped:" destination="bwC-6h-j26" eventType="touchUpInside" id="ng2-W0-g6H"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgO-cg-UJX">
-                                <rect key="frame" x="327" y="600" width="115" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="9 – 14">
-                                    <color key="titleShadowColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="preteenButtonTapped:" destination="bwC-6h-j26" eventType="touchUpInside" id="RaX-ST-2BR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p06-11-BKD">
-                                <rect key="frame" x="327" y="733" width="115" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="15 – 18">
-                                    <color key="titleShadowColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="teenButton:" destination="bwC-6h-j26" eventType="touchUpInside" id="OvH-XN-Yob"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Your Age Range" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjb-fO-cyh">
-                                <rect key="frame" x="210" y="201" width="350" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="54" translatesAutoresizingMaskIntoConstraints="NO" id="EvM-qq-ted">
+                                <rect key="frame" x="284" y="587" width="200" height="350"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7H-Jn-gQm">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="47"/>
+                                        <color key="backgroundColor" red="0.54117647059999996" green="0.3145552278" blue="0.64665478470000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <state key="normal" title="0 – 3">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="infantButtonTapped:" destination="bwC-6h-j26" eventType="touchUpInside" id="HET-a0-fbJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhp-us-4G1">
+                                        <rect key="frame" x="0.0" y="101" width="200" height="47"/>
+                                        <color key="backgroundColor" red="0.54117647059999996" green="0.3145552278" blue="0.64665478470000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <state key="normal" title="4 – 6">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="toddlerButtonTapped:" destination="bwC-6h-j26" eventType="touchUpInside" id="ng2-W0-g6H"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgO-cg-UJX">
+                                        <rect key="frame" x="0.0" y="202" width="200" height="47"/>
+                                        <color key="backgroundColor" red="0.54117647059999996" green="0.3145552278" blue="0.64665478470000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <state key="normal" title="9 – 14">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="preteenButtonTapped:" destination="bwC-6h-j26" eventType="touchUpInside" id="RaX-ST-2BR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p06-11-BKD">
+                                        <rect key="frame" x="0.0" y="303" width="200" height="47"/>
+                                        <color key="backgroundColor" red="0.54117647059999996" green="0.3145552278" blue="0.64665478470000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <state key="normal" title="15 – 18">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="teenButton:" destination="bwC-6h-j26" eventType="touchUpInside" id="OvH-XN-Yob"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wgO-cg-UJX" firstAttribute="height" secondItem="x7H-Jn-gQm" secondAttribute="height" id="LUx-P3-Q1m"/>
+                                    <constraint firstAttribute="height" constant="350" id="OvU-2H-Nil"/>
+                                    <constraint firstItem="fhp-us-4G1" firstAttribute="height" secondItem="x7H-Jn-gQm" secondAttribute="height" id="Rg4-XY-Y64"/>
+                                    <constraint firstAttribute="width" constant="200" id="f5K-zE-i8S"/>
+                                    <constraint firstItem="p06-11-BKD" firstAttribute="height" secondItem="x7H-Jn-gQm" secondAttribute="height" id="uu0-eF-3r2"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Your Age Range" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjb-fO-cyh">
+                                <rect key="frame" x="184" y="492" width="400" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="A86-1s-tb1"/>
+                                    <constraint firstAttribute="height" constant="60" id="yuk-is-sye"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ccaclogo" translatesAutoresizingMaskIntoConstraints="NO" id="xLK-ru-Kka">
+                                <rect key="frame" x="84" y="120" width="600" height="365"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="HvH-Yc-Nql"/>
+                                    <constraint firstAttribute="height" constant="365" id="fNI-8o-KF3"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xLK-ru-Kka" firstAttribute="centerX" secondItem="UTw-yf-vPL" secondAttribute="centerX" id="J08-3F-IRs"/>
+                            <constraint firstItem="Tjb-fO-cyh" firstAttribute="centerX" secondItem="UTw-yf-vPL" secondAttribute="centerX" id="QPC-QQ-bvz"/>
+                            <constraint firstItem="EvM-qq-ted" firstAttribute="centerY" secondItem="UTw-yf-vPL" secondAttribute="centerY" constant="250" id="cCf-Ti-yhe"/>
+                            <constraint firstItem="Tjb-fO-cyh" firstAttribute="centerY" secondItem="UTw-yf-vPL" secondAttribute="centerY" constant="10" id="fIF-nk-WzZ"/>
+                            <constraint firstItem="EvM-qq-ted" firstAttribute="centerX" secondItem="UTw-yf-vPL" secondAttribute="centerX" id="fet-KM-Lwg"/>
+                            <constraint firstItem="xLK-ru-Kka" firstAttribute="top" secondItem="q3o-QE-UyN" secondAttribute="top" constant="50" id="iwB-hU-2mh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="q3o-QE-UyN"/>
                     </view>
                     <navigationItem key="navigationItem" id="cPg-oc-bIf"/>
@@ -89,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6hq-af-lbZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="783.59375" y="-3.5156249999999996"/>
+            <point key="canvasLocation" x="1549.21875" y="-3.5156249999999996"/>
         </scene>
         <!--KidsMiddleScreen-->
         <scene sceneID="TQ9-e6-8DD">
@@ -97,7 +127,7 @@
                 <viewControllerPlaceholder storyboardName="KidsMiddleScreen" id="AOD-p5-FTM" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nA6-pE-krr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1373.4375" y="176.953125"/>
+            <point key="canvasLocation" x="2139.0625" y="176.953125"/>
         </scene>
         <!--Main-->
         <scene sceneID="rqd-GY-LZ7">
@@ -107,5 +137,27 @@
             </objects>
             <point key="canvasLocation" x="117" y="525"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rn1-v1-LG8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jJ0-Im-HIK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZjO-jQ-D2p">
+                        <rect key="frame" x="0.0" y="20" width="768" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.54117647059999996" green="0.3145552278" blue="0.64665478470000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bwC-6h-j26" kind="relationship" relationship="rootViewController" id="JGa-aS-K0p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kcp-l2-lNU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="783.59375" y="-3.5156249999999996"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="ccaclogo" width="308" height="307"/>
+    </resources>
 </document>

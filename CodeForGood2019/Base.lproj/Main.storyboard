@@ -84,7 +84,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page2" translatesAutoresizingMaskIntoConstraints="NO" id="Iwg-Wb-C2M" userLabel="MainImageView">
-                                <rect key="frame" x="0.0" y="20" width="768.00000000000045" height="1004"/>
+                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dzN-Co-go9" userLabel="TempImageView">
                                 <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
