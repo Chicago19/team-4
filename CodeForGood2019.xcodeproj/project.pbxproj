@@ -12,6 +12,7 @@
 		4522DF1523359C95007C27CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4522DF1323359C95007C27CE /* Main.storyboard */; };
 		4522DF1723359C97007C27CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4522DF1623359C97007C27CE /* Assets.xcassets */; };
 		45516A202335A70000D223FF /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45516A1F2335A70000D223FF /* TabBar.storyboard */; };
+		45516A222335AD1900D223FF /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45516A212335AD1900D223FF /* ResourcesViewController.swift */; };
 		76989B537977DF4F5BC864CE /* Pods_CodeForGood2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFC632E782DF8879B6EBA43 /* Pods_CodeForGood2019.framework */; };
 		D5E6AE512335B0F900D01FAF /* LandingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5E6AE502335B0F900D01FAF /* LandingStoryboard.storyboard */; };
 		D5E6AE532335B31F00D01FAF /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E6AE522335B31F00D01FAF /* LandingViewController.swift */; };
@@ -28,9 +29,12 @@
 		4522DF1623359C97007C27CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4522DF1B23359C97007C27CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45516A1F2335A70000D223FF /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+
 		D5E6AE502335B0F900D01FAF /* LandingStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LandingStoryboard.storyboard; sourceTree = "<group>"; };
 		D5E6AE522335B31F00D01FAF /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		D5E6AE542335B4E100D01FAF /* ParentVerifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentVerifyViewController.swift; sourceTree = "<group>"; };
+		45516A212335AD1900D223FF /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
+
 		DCFC632E782DF8879B6EBA43 /* Pods_CodeForGood2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeForGood2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,6 +82,7 @@
 			children = (
 				4522DF0F23359C95007C27CE /* AppDelegate.swift */,
 				4522DF1123359C95007C27CE /* ViewController.swift */,
+				45516A212335AD1900D223FF /* ResourcesViewController.swift */,
 				4522DF1323359C95007C27CE /* Main.storyboard */,
 				45516A1F2335A70000D223FF /* TabBar.storyboard */,
 				4522DF1623359C97007C27CE /* Assets.xcassets */,
@@ -217,6 +222,7 @@
 				D5E6AE532335B31F00D01FAF /* LandingViewController.swift in Sources */,
 				D5E6AE552335B4E100D01FAF /* ParentVerifyViewController.swift in Sources */,
 				4522DF1023359C95007C27CE /* AppDelegate.swift in Sources */,
+				45516A222335AD1900D223FF /* ResourcesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
