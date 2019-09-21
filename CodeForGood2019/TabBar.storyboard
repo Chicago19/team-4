@@ -26,7 +26,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ps6-Fc-qcP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-645" y="963"/>
+            <point key="canvasLocation" x="-645.32374100719426" y="962.8140703517588"/>
         </scene>
         <!--Resource Detail View Controller-->
         <scene sceneID="QNx-Kr-YcN">
@@ -62,23 +62,58 @@
             </objects>
             <point key="canvasLocation" x="100" y="963"/>
         </scene>
-        <!--Documents-->
+        <!--Document View Controller-->
         <scene sceneID="3rm-7G-jFz">
             <objects>
-                <viewController id="WCs-2z-ixb" sceneMemberID="viewController">
+                <viewController id="WCs-2z-ixb" customClass="DocumentViewController" customModule="CodeForGood2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OgJ-qE-kgI">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IG3-zR-K4A">
+                                <rect key="frame" x="0.0" y="74" width="834" height="1055"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="hello" rowHeight="123" id="ff2-Gr-3bJ" customClass="DocumentTableViewCell" customModule="CodeForGood2019" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="834" height="123"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ff2-Gr-3bJ" id="Cwm-6s-Q3c">
+                                            <rect key="frame" x="0.0" y="0.0" width="834" height="122.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdw-HH-NuU">
+                                                    <rect key="frame" x="72" y="32" width="620" height="58"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="documentLabel" destination="Wdw-HH-NuU" id="Eb4-wV-KgR"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IG3-zR-K4A" firstAttribute="leading" secondItem="TW0-Fv-7TP" secondAttribute="leading" id="HRD-EZ-ADA"/>
+                            <constraint firstItem="IG3-zR-K4A" firstAttribute="top" secondItem="TW0-Fv-7TP" secondAttribute="top" id="Nv4-CY-JY1"/>
+                            <constraint firstItem="TW0-Fv-7TP" firstAttribute="bottom" secondItem="IG3-zR-K4A" secondAttribute="bottom" id="VkM-RG-GA9"/>
+                            <constraint firstItem="TW0-Fv-7TP" firstAttribute="trailing" secondItem="IG3-zR-K4A" secondAttribute="trailing" id="uuj-lr-6Ia"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="TW0-Fv-7TP"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Documents" image="document" selectedImage="document" id="OOz-tx-nIA">
-                        <color key="badgeColor" name="findHighlightColor" catalog="System" colorSpace="catalog"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="pMp-IU-Mf1"/>
+                    <connections>
+                        <outlet property="documentTableView" destination="IG3-zR-K4A" id="Nlk-no-pBn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjE-VF-nfy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1371" y="301"/>
+            <point key="canvasLocation" x="-1371.223021582734" y="1038.6934673366834"/>
         </scene>
         <!--Survey View Controller-->
         <scene sceneID="298-25-X6H">
@@ -129,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kUE-9U-sz8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="830.93525179856124" y="300.50251256281405"/>
+            <point key="canvasLocation" x="1584.8920863309354" y="300.50251256281405"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="n50-1K-d51">
@@ -143,7 +178,7 @@
                         <color key="selectedImageTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="WCs-2z-ixb" kind="relationship" relationship="viewControllers" id="lAN-0i-n9b"/>
+                        <segue destination="UzP-an-qPk" kind="relationship" relationship="viewControllers" id="lAN-0i-n9b"/>
                         <segue destination="gML-V1-GTz" kind="relationship" relationship="viewControllers" id="GAe-GE-G8l"/>
                         <segue destination="byC-fe-Dsy" kind="relationship" relationship="viewControllers" id="tkM-V2-YRi"/>
                     </connections>
@@ -169,7 +204,28 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nYM-HM-y7R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-645.32374100719426" y="300.50251256281405"/>
+            <point key="canvasLocation" x="108.63309352517986" y="300.50251256281405"/>
+        </scene>
+        <!--Documents-->
+        <scene sceneID="Tj8-uQ-76d">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UzP-an-qPk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Documents" image="document" selectedImage="document" id="OOz-tx-nIA">
+                        <color key="badgeColor" name="findHighlightColor" catalog="System" colorSpace="catalog"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mSd-jx-fSt">
+                        <rect key="frame" x="0.0" y="24" width="834" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WCs-2z-ixb" kind="relationship" relationship="rootViewController" id="Pvn-iT-vTR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yM5-fE-kb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1371.223021582734" y="300.50251256281405"/>
         </scene>
     </scenes>
     <resources>
