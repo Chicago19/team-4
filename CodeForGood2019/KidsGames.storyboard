@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dxY-mh-Z8R">
-    <device id="ipad9_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dxY-mh-Z8R">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -28,15 +27,27 @@
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="Kid's Games" id="tVM-zl-80u"/>
+                                    <navigationItem id="tVM-zl-80u">
+                                        <barButtonItem key="leftBarButtonItem" id="Mcg-So-8kF">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="y4p-pg-yZU">
+                                                <rect key="frame" x="20" y="4.5" width="170" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="Back">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                            </button>
+                                            <connections>
+                                                <action selector="backBtnPressed:" destination="dxY-mh-Z8R" id="2vt-3S-kqC"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bubbleIconTransparency" translatesAutoresizingMaskIntoConstraints="NO" id="bLt-qI-8y8">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bubbleIconTransparency" translatesAutoresizingMaskIntoConstraints="NO" id="bLt-qI-8y8">
                                 <rect key="frame" x="280" y="110" width="209" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="209" id="inu-57-uAx"/>
-                                </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bikeIconTransparent" translatesAutoresizingMaskIntoConstraints="NO" id="tbs-OM-jqe">
                                 <rect key="frame" x="528" y="110" width="209" height="128"/>
@@ -87,8 +98,10 @@
                         <viewLayoutGuide key="safeArea" id="ZYp-36-gXS"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="Mcg-So-8kF" id="WSz-OJ-koZ"/>
                         <outlet property="flowButton" destination="CPT-8L-vj3" id="7m0-W2-DjS"/>
                         <outlet property="flowImage" destination="1DI-4W-3o4" id="kUp-Tq-T8k"/>
+                        <outlet property="navBar" destination="Gjg-w7-gNR" id="DtJ-Jv-6hV"/>
                         <outlet property="sonicButton" destination="ryh-Ng-Jfe" id="3oG-uj-GQB"/>
                         <outlet property="sonicImage" destination="NW2-1c-gkG" id="GWe-i2-JMK"/>
                         <segue destination="QcT-g4-tRQ" kind="show" identifier="kidsGameSegue" id="dAe-H0-y0g"/>

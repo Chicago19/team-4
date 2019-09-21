@@ -16,6 +16,8 @@ class KidGamesViewController: UIViewController {
     @IBOutlet weak var sonicButton: UIButton!
     @IBOutlet weak var flowImage: UIImageView!
     @IBOutlet weak var sonicImage: UIImageView!
+    @IBOutlet weak var backButton: UIBarButtonItem!
+    @IBOutlet weak var navBar: UINavigationBar!
     
     var kidsArray: [Game] = [Game(name: "Flow", image: UIImage(named: "flow3")!),
                              
@@ -50,5 +52,9 @@ class KidGamesViewController: UIViewController {
         sonicImage.isHidden = false;
     }
     
+    @IBAction func backBtnPressed(_ sender: UIBarButtonItem) {
+        sonicImage.isHidden = true;
+        flowImage.isHidden = true;
+    }
 }
 
