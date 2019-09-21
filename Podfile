@@ -5,7 +5,7 @@ target 'CodeForGood2019' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-pod 'SnapKit', '~> 5.0.0'
+pod 'SnapKit', '~> 4.0.0'
 
 
   # Pods for CodeForGood2019
