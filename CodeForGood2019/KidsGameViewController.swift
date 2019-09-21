@@ -19,7 +19,7 @@ class KidGamesViewController: UIViewController {
     @IBOutlet weak var backButton: UIBarButtonItem!
     @IBOutlet weak var navBar: UINavigationBar!
     
-    var kidsArray: [Game] = [Game(name: "Flow", image: UIImage(named: "flow3")!),
+    var kidsArray: [Game] = [Game(name: "Flow", image: UIImage(named: "flowIconTransparent")!),
                              
                              Game(name: "bubble", image: UIImage(named: "bubbleIconTransparency")!),
                              
@@ -41,20 +41,31 @@ class KidGamesViewController: UIViewController {
         super.viewDidLoad()
         
         
+        
+        navigationController?.navigationBar.barTintColor = Colors.fadedPurple
+        navigationController?.navigationBar.tintColor = .white
+        title = "Games"
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "kidsGameSegue") {
+            if let vc = segue.destination as? KidsGamesDetailViewController {
+                guard let game = sender as? Game else { return }
+                print("My game: \(game)")
+                vc.game = game
+            }
+        }
+    }
     
     @IBAction func flowButtonPressed(_ sender: UIButton) {
-        flowImage.isHidden = false;
+        performSegue(withIdentifier: "kidsGameSegue", sender: kidsArray[0])
+        
     }
     
     @IBAction func sonicButtonPressed(_ sender: UIButton){
-        sonicImage.isHidden = false;
+        performSegue(withIdentifier: "kidsGameSegue", sender: kidsArray[5])
+        
     }
-    
-    @IBAction func backBtnPressed(_ sender: UIBarButtonItem) {
-        sonicImage.isHidden = true;
-        flowImage.isHidden = true;
-    }
+
 }
 

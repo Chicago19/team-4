@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xsR-ue-NJ1">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -84,21 +85,30 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="c4C-QU-8EZ"/>
                     </view>
                     <connections>
-                        <outlet property="coloringBOok" destination="G2S-0O-Gue" id="qIy-b4-mQf"/>
+                        <outlet property="coloringBook" destination="G2S-0O-Gue" id="vOX-As-uD3"/>
                         <outlet property="games" destination="WbB-0N-Gea" id="Aex-16-bGb"/>
                         <outlet property="label" destination="0Sn-wb-xY9" id="LM0-X5-Yyi"/>
                         <outlet property="media" destination="0fT-59-gf8" id="Eo1-PS-nAF"/>
                         <outlet property="music" destination="ncd-Th-vMY" id="p21-Gm-JsB"/>
                         <outlet property="qa" destination="3hc-Ro-zrJ" id="rWB-63-Y6i"/>
+                        <segue destination="VVS-UH-EYt" kind="show" identifier="kidGamesSegue" id="X3F-p6-hH8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6fl-PX-ZhI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-30.46875" y="129.4921875"/>
+            <point key="canvasLocation" x="97" y="91"/>
+        </scene>
+        <!--KidsGames-->
+        <scene sceneID="Lbb-lg-yYB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="KidsGames" id="VVS-UH-EYt" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tFY-OH-Wla" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="661" y="91"/>
         </scene>
     </scenes>
 </document>

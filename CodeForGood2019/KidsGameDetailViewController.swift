@@ -10,12 +10,16 @@ import UIKit
 
 class KidsGamesDetailViewController: UIViewController {
     
-    @IBOutlet weak var kidsImageView: UIImageView!
+    
+    @IBOutlet var kidsImageView: UIImageView!
     
     var game: Game!
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if(game.image == nil) {
+            print("Nillllll")
+        }
         kidsImageView.image = game.image
     }
 }

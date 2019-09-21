@@ -25,7 +25,7 @@ class AgesViewController: UIViewController {
         print("hi")
     }
     @IBAction func infantButtonTapped(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "coloringBookSegue", sender: self)
+//        self.performSegue(withIdentifier: "coloringBookSegue", sender: self)
         print("infant")
     }
     @IBAction func toddlerButtonTapped(_ sender: UIButton) {
@@ -33,8 +33,10 @@ class AgesViewController: UIViewController {
     }
     @IBAction func preteenButtonTapped(_ sender: UIButton) {
         print("preteen")
+        self.performSegue(withIdentifier: "kidsMiddleSegue", sender: self)
     }
     @IBAction func teenButton(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "kidsMiddleSegue", sender: self)
         print("teen")
     }
     

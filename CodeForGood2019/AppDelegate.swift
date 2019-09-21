@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().tintColor = Colors.fadedGreen
         UITabBar.appearance().backgroundColor = .white
         
+        UINavigationBar.appearance().backgroundColor = Colors.fadedPurple
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         return true

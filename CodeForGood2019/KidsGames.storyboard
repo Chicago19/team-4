@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dxY-mh-Z8R">
-    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dxY-mh-Z8R">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,34 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gjg-w7-gNR">
-                                <rect key="frame" x="0.0" y="-6" width="768" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="9VN-sH-oT8"/>
-                                </constraints>
-                                <color key="barTintColor" red="0.5580025315284729" green="0.44434559345245361" blue="0.68237781524658203" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem id="tVM-zl-80u">
-                                        <barButtonItem key="leftBarButtonItem" id="Mcg-So-8kF">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="y4p-pg-yZU">
-                                                <rect key="frame" x="20" y="4.5" width="170" height="41"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                <state key="normal" title="Back">
-                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                </state>
-                                            </button>
-                                            <connections>
-                                                <action selector="backBtnPressed:" destination="dxY-mh-Z8R" id="2vt-3S-kqC"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bubbleIconTransparency" translatesAutoresizingMaskIntoConstraints="NO" id="bLt-qI-8y8">
                                 <rect key="frame" x="280" y="110" width="209" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -85,67 +58,59 @@
                                     <action selector="sonicButtonPressed:" destination="dxY-mh-Z8R" eventType="touchUpInside" id="71a-ej-AmO"/>
                                 </connections>
                             </button>
-                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flow2" translatesAutoresizingMaskIntoConstraints="NO" id="1DI-4W-3o4">
-                                <rect key="frame" x="-33" y="44" width="836" height="980"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sonic1" translatesAutoresizingMaskIntoConstraints="NO" id="NW2-1c-gkG">
-                                <rect key="frame" x="14" y="44" width="734" height="980"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ZYp-36-gXS"/>
                     </view>
+                    <navigationItem key="navigationItem" id="o9I-vg-uB3"/>
                     <connections>
-                        <outlet property="backButton" destination="Mcg-So-8kF" id="WSz-OJ-koZ"/>
                         <outlet property="flowButton" destination="CPT-8L-vj3" id="7m0-W2-DjS"/>
-                        <outlet property="flowImage" destination="1DI-4W-3o4" id="kUp-Tq-T8k"/>
-                        <outlet property="navBar" destination="Gjg-w7-gNR" id="DtJ-Jv-6hV"/>
                         <outlet property="sonicButton" destination="ryh-Ng-Jfe" id="3oG-uj-GQB"/>
-                        <outlet property="sonicImage" destination="NW2-1c-gkG" id="GWe-i2-JMK"/>
                         <segue destination="QcT-g4-tRQ" kind="show" identifier="kidsGameSegue" id="dAe-H0-y0g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lFs-h5-bGE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="rW1-Xg-vSR"/>
             </objects>
-            <point key="canvasLocation" x="-4010.15625" y="-767.578125"/>
+            <point key="canvasLocation" x="-3244.53125" y="-767.578125"/>
         </scene>
-        <!--Kids Game Detail View Controller-->
+        <!--Kids Games Detail View Controller-->
         <scene sceneID="9sN-xC-uML">
             <objects>
-                <viewController id="QcT-g4-tRQ" customClass="KidsGameDetailViewController" customModule="CodeForGood2019" sceneMemberID="viewController">
+                <viewController id="QcT-g4-tRQ" customClass="KidsGamesDetailViewController" customModule="CodeForGood2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pq5-ir-ALr">
-                        <rect key="frame" x="0.0" y="0.0" width="712" height="984"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2hr-G5-GhK">
-                                <rect key="frame" x="0.0" y="0.0" width="712" height="984"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2hr-G5-GhK">
+                                <rect key="frame" x="0.0" y="80" width="768" height="944"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2hr-G5-GhK" firstAttribute="bottom" secondItem="nMz-n3-5aK" secondAttribute="bottom" id="6E2-QY-EfN"/>
+                            <constraint firstItem="2hr-G5-GhK" firstAttribute="top" secondItem="Pq5-ir-ALr" secondAttribute="top" constant="80" id="Zcy-Gk-tgD"/>
+                            <constraint firstItem="2hr-G5-GhK" firstAttribute="leading" secondItem="nMz-n3-5aK" secondAttribute="leading" id="fUL-Dj-gWu"/>
+                            <constraint firstItem="2hr-G5-GhK" firstAttribute="trailing" secondItem="nMz-n3-5aK" secondAttribute="trailing" id="w14-Nq-gq5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="nMz-n3-5aK"/>
                     </view>
                     <navigationItem key="navigationItem" id="06F-ge-Tu5"/>
                     <connections>
-                        <outlet property="kidsImageView" destination="2hr-G5-GhK" id="X63-IJ-MPn"/>
+                        <outlet property="kidsImageView" destination="2hr-G5-GhK" id="nOl-DQ-bQ7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ort-vc-Btn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3207" y="-768"/>
+            <point key="canvasLocation" x="-2441.40625" y="-768.1640625"/>
         </scene>
     </scenes>
     <resources>
         <image name="bikeIconTransparent" width="253" height="248"/>
         <image name="bubbleIconTransparency" width="252" height="249"/>
-        <image name="flow2" width="313" height="417"/>
         <image name="flowIconTransparent" width="249" height="242"/>
         <image name="helixIconTransparent" width="250" height="246"/>
         <image name="nailSalonIconTransparent" width="250" height="246"/>
-        <image name="sonic1" width="311" height="417"/>
         <image name="sonicIconTransparent" width="253" height="246"/>
         <image name="subwayIconTransparent" width="246" height="243"/>
         <image name="ticTacToeIconTransparent" width="250" height="246"/>
