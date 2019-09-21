@@ -100,6 +100,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="52"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnS-y4-Fy1">
+                                <rect key="frame" x="26" y="39" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.73725490199999999" green="0.59607843140000005" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="JNM-Xi-onM" eventType="touchUpInside" id="ONq-Me-vUe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -113,6 +123,7 @@
                         <viewLayoutGuide key="safeArea" id="aps-bZ-CQF"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="BnS-y4-Fy1" id="vaY-Ml-0nS"/>
                         <outlet property="parentButton" destination="DOj-TT-h0x" id="4Qn-AB-bSf"/>
                         <outlet property="parentCodeTextField" destination="brP-Cg-wIt" id="gJ7-NT-FfR"/>
                         <segue destination="8ZD-yM-cKX" kind="show" identifier="parentToTabBar" id="maU-PJ-Mie"/>
